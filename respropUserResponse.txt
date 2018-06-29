@@ -1,0 +1,126 @@
+
+
+A.  You answered No to ‘Is the property residential?’
+
+
+
+	In this case:
+
+    i) Commercial rates of Stamp Duty Land Tax("SDLT") apply in England and Northern Ireland. The current rates and bands are as follows;
+    . 
+
+     [Check here if you would like to see a calculation of your SDLT liability - html form insert y/n]
+    
+    Note that in Scotland, Land and Building Transaction Tax ("LBTT") will instead apply and in Wales, Land Transaction Tax. Separate specific advice should be taken where a Scottish or Welsh property is involved. 
+    
+    ii) The Annual Tax on Enveloped Dwellings ("ATED") will not be relevant in this situation.
+    
+    iii)Capital Gains Tax [“CGT”]can arise on any profit on the sale of the property. This also applies to non-UK resident individuals and non-UK resident companies [CHECK LATEST POSITION RE THIS].  
+
+   Individuals and companies may, however, find that any profit may be treated as income if the property was bought with a  view to sale at a profit. In that situation, the profit can be taxed at the normal marginal income tax rate (for individuals) or 20% for non-resident companies and corporation tax for UK resident companies. 
+
+	
+     [Check here if you would like to see a calculation of your CGT liability - html form insert y/n]
+    
+    #***#
+
+
+
+
+B. You answered Yes to ‘Is the property residential?’ and you answered No to ‘Is the owner a non-natural person?’
+
+
+	In this case:
+
+    i) Stamp Duty Land Tax bands apply for residential property in England and Northern Ireland. The current rates and bands are as follows;
+
+    [INSERT BANDS HERE....???]. [INDICATIVE LIABILITIES CAN BE SHOWN USING THE LINK ON THE TAX CHECK FORM????? ] 
+
+In addition, there could be a surcharge of another  3% if the purchase results in more than one property being owned (although relief from the surcharge can be claimed if the second property has been acquired to replace a main residence [TIME PERIOD???]. 
+
+	
+     [Check here if you would like to see a calculation of your SDLT liability - html form insert y/n]
+    
+   Note that in Scotland, Land and Building Transaction Tax ("LBTT") will instead apply and in Wales, Land Transaction Tax. Separate specific advice should be taken where a Scottish or Welsh property is involved. 
+
+  ii) The Annual Tax on Enveloped Dwellings ("ATED") will not be chargeable in this situation.
+
+iii) Capital Gains Tax [“CGT”]will apply to both UK residents and non-residents if a profit is made on the sale of the property. Individuals and companies may, however, find that any profit may be treated as income if the property was bought with a  view to sale at a profit. In that situation, the profit can be taxed at the normal marginal income tax rate (for individuals) or 20% for non-resident companies and corporation tax for UK resident companies. 
+
+	
+     [Check here if you would like to see a calculation of your CGT liability - html form insert y/n]
+
+  #***#
+
+C. You answered Yes to ‘Is the property residential?’ and you answered Yes to ‘Is the owner a non-natural person?’. You also answered No to ‘Is the value more than £500,000. 
+
+
+In this case:
+
+       i) Stamp Duty Land Tax bands apply for residential property in England and Northern Ireland. The current rates and bands are as follows;
+
+    [INSERT BANDS HERE....???].  In addition, there could be a surcharge of another  3% (which, in the case of a corporate purchasers, can arise even if only one property is acquired). 
+
+	
+     [Check here if you would like to see a calculation of your SDLT liability - html form insert y/n]
+
+Note that in Scotland, Land and Building Transaction Tax ("LBTT") will instead apply and in Wales, Land Transaction Tax. Separate specific advice should be taken where a Scottish or Welsh property is involved.     ii) The Annual Tax on Enveloped Dwellings ("ATED") will not be relevant in this situation.
+
+ii) Capital Gains Tax (“CGT”) will apply to both UK residents and non-residents if a profit is made on the sale of the property, unless the property was bought as a principal private residence, in which case the main residence exemption from CGT can apply (although there may still be conditions to fulfil if e.g. the owner is not UK resident or there is more than one property used as a residence. 
+
+Individuals can still find, however, find that any profit may be treated as income if the property was bought with a  view to sale at a profit. In that situation, the profit can be taxed at the normal marginal income tax rate and there would be no main residence exemption. 
+
+	
+     [Check here if you would like to see a calculation of your CGTT liability - html form insert y/n]
+
+ #***#
+
+
+D. You answered Yes to ‘Is the property residential?’ and you answered Yes to ‘Is the owner a non-natural person?’. You also answered Yes to ‘Is the value more than £500,000 and Yes to ‘Is the property used for a qualifying business?’. 
+
+
+In this case: 
+
+ i)  Normal residential rates will apply in England and Northern Ireland. Relief from the highest,15%, Stamp Duty Land Tax (‘SDLT’) charge should be available but this relief must be claimed on the Land Transaction Return.
+
+The current rates and bands are as follows;
+    [INSERT BANDS HERE....???].  
+
+	In addition, there could be a surcharge of another 3% (which, in the case of a corporate purchasers, can arise even if only one property is acquired). 
+
+     [Check here if you would like to see a calculation of your SDLT liability - html form insert y/n]
+
+Note that in Scotland, Land and Building Transaction Tax ("LBTT") will instead apply and in Wales, Land Transaction Tax. Separate specific advice should be taken where a Scottish or Welsh property is involved. 
+	
+ii) No Annual Tax on Enveloped Dwellings (‘ATED’) arises. As simplified ATED return is required to be submitted annually to HMRC to claim the relief.
+
+iii) Capital Gains Tax (‘CGT’) will be payable on capital gains realised. For companies, the rate is 20%.   
+
+
+     [Check here if you would like to see a calculation of your CGT liability - html form insert y/n]
+	
+Note that if one of the motives for buying the property was to realise a gain on sale, any profit could be treated as income from trading. 
+
+			
+
+E.  You answered Yes to ‘Is the property residential?’ and you answered Yes to ‘Is the owner a non-natural person?’. You also answered Yes to ‘Is the value more than £500,000 and No to ‘Is the property used for a qualifying business?’.
+
+
+In this case
+
+i) In England and Northern Ireland, Stamp Duty Land Tax (‘SDLT’) at the highest rate of 15% will be due on purchase. In addition, there could be a surcharge of 3%  which, in the case of a corporate purchasers, can arise even if only one property is acquired). 
+
+     [Check here if you would like to see a calculation of your SDLT liability - html form insert y/n]
+	
+    Note that in Scotland, Land and Building Transaction Tax ("LBTT") will instead apply and in Wales, Land Transaction Tax. Separate specific advice should be taken where a Scottish or Welsh property is involved. ate specific advice should be taken where a Scottish property is involved.
+
+ii) Annual Tax on Enveloped Dwellings (‘ATED’) arises. An ATED return is required to be submitted annually to HMRC .
+
+   ATED rates are as follows; [insert table ]
+
+     [Check here if you would like to see a calculation of your ATED liability - html form insert y/n]
+
+iii) Capital Gains Tax (‘CGT’) will arise on any gain realised on the sale of the property, The rate is 28% where ATED (above) has applied to the property. If there is an element of the gain not taxed as an ATED-related gain, this may be subject to tax a a rate of 20% for non-resident companies and normal corporation tax rates to UK companies.   
+
+	
+     [Check here if you would like to see a calculation of your CGT liability - html form insert y/n]

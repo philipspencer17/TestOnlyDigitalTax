@@ -1,0 +1,257 @@
+<html>
+    
+       <head>
+           
+             
+    
+        <title>TestOnlyDigitalTax</title>
+           
+           <script type="text/javascript" src="/Users/philipspencer/Desktop/Web Development/2-jquery/jquery-3.3.1.min.js"></script>     
+ 
+        <meta name="viewport" content="width=device-width, inionclickonclicktial-scale=1">
+           
+        <script type="text/javascript" src="/Users/philipspencer/Desktop/Web Development/2-jquery/jquery-3.3.1.min.js"></script>  
+        
+      
+           
+        <link rel="stylesheet" type="text/css" href="webpageCSS.css">
+           
+        <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+        
+          <style type="text/css">   
+          #residentialtip
+       {
+           
+           width:100px;
+           color:black;
+           
+           
+   
+              }
+              
+               #spacer
+       {
+           
+           
+           margin-bottom: 10px;
+            margin-top: : 5px;
+           float: left
+       }
+              #restip {
+                  
+          position:relative;
+            
+                   }
+              
+              
+           
+           </style>   
+        </head>
+
+        <body>
+            
+       
+            
+          <div id="section">  
+            <img src = "philip.jpg" width = "80" height = "110">
+            <p id ="top"> Philip Spencer B.Sc[Econ] FCA </p>
+            
+            <h1 style = "color: blue; font-size:200%">Digital Tax Aid </h1>
+            <h2> Buying Residential Property</h2>
+            <h3 id="squid">Key Pointers</h3>
+            
+            <p ><a href = "https://www.taxjournal.com/content/philip-spencer">click here for my Tax Journal Article </a></p>
+           ><br>
+              
+              
+              
+              </div>
+          
+              
+             <p id = "userN">  <form>
+                username:<input type = "text" placeholder = "username">
+               
+          
+                </form> </p>
+    
+    
+             </div>
+        
+       <div id="spacer">
+        
+        <label for="password">password       </label>
+        <input type="password" name="password" id="password" > 
+        
+        </div>
+        
+    <br>
+         <br><br><br>
+
+            
+            <ol>
+ <li><b>Is the property residential? </b></li>
+                <label id = "residencetip"></label>
+               <button id = "restip">click here for meaning of 'residential'</button>
+                <button id = "cleartip">click to remove tip</button>
+                <form>
+                <p class = "Yes to Res"> Residential <input type = "radio" name = "Residential?" value = "No"> </p>
+                </form>
+                <form>
+                <p class = "No to Res"> Non-Residential <input type = "radio" name = "Residential?" value = "No"> </p>
+                </form>
+                
+            
+                
+               <li> <b>Value over £500,000? </b></li>
+                <button id = "valtip">click here for tip re value</button>
+                <button id = "clearvaltip">click to remove tip</button>
+                <form>
+                <p class = "over 500"> Over £500k <input type = "radio" name = "500+" value = "yes over"> </p>
+                </form>
+                <form>
+                <p class = "Not over 500"> Not over £500k <input type = "radio" name = "not over 500" value = "Not over"> </p>
+                </form>
+                
+               
+                <li><b>Non-Natural Person?</b> </li>
+                 <button id = "natperstip">click here for meaning of non-natural person</button>
+                <button id = "clearnatperstip">click to remove tip</button>
+                <form>
+                <p class ="NatPers"> Natural person: <input type = "radio" name = "t" value = "np"> </p>
+                </form>
+                <form>
+                <p class = "NonNatPers"> Non-Natural person <input type = "radio" name = "t" value = "nnp"> </p>
+                </form>
+                
+                
+                
+              <li><b>Qualifying Purpose?</b></li>
+                <button id = "qualpurptip">click here for meaning of qualifying purpose</button>
+                <button id = "clearqualpurptip">click to remove qualifying purpose tip</button>
+                <br>
+                
+                <form>
+                <p class ="let"> Commercially-let: <input type = "radio" name = "t" value = "np"> </p>
+                </form>
+                <form>
+                <p class = "busprems"> Business Premises <input type = "radio" name = "t" value = "nnp"> </p>
+                </form>
+                <form>
+                <p class = "notqual">Non-qualifying use <input type = "radio" name = "t" value = "nnp"> </p>
+                </form>
+                
+          
+                
+            
+            
+            
+            
+            
+            
+                })
+                
+                </script>         
+                <br><br>
+                    </ol>
+            <p><input type = "submit" value= "click here to submit">
+    
+            <button onclick = "alert ('More Apps Coming soon!')">click me</button>
+            <script type = "text/javascript">
+                
+             alert('This is a test app only and the content should not be relied upon. Furthermore, an app of this nature is no substitute for taking specific professional advice')   
+            </script>
+            </p>
+            
+            
+    
+   
+            
+    <script type="text/javascript">
+   
+    document.getElementById("restip").onclick=function(){
+        
+        
+        document.getElementById("restip").innerHTML= " <h3>Residential property means..a) A building that is used or suitable for use as a dwelling or adapted for such use; or b)land forming part of a garden or grounds of such building, or c) land that subsists for the benefit of such a building. Note that there are variations in the definition of residential property for each of the SDLT, ATED and new CGT rules. Further advice should be taken in any area of doubt in relation to specific properties and in certain uses such as student accommodation and care homes. There is also an extended meaning of residential property for recent CGT rules for non-residents to include land that has at any time in the relevant period consisted of or included a dwelling.</h3>" ;
+       
+        
+        
+    }
+    
+    document.getElementById("cleartip").onclick=function(){
+        
+        
+        document.getElementById("restip").innerHTML = "click here for meaning of 'residential'";
+        
+    }
+    
+    
+    
+     document.getElementById("valtip").onclick=function(){
+        
+        
+        document.getElementById("valtip").innerHTML= " <h3>The value is the value of the property on acquisition or construction or, if later, 1 April 2017</h3>" ;
+       
+        
+        
+    }
+    
+    document.getElementById("clearvaltip").onclick=function(){
+        
+        
+        document.getElementById("valtip").innerHTML = "click here for tip re value";
+        
+    }
+    
+    
+    
+    document.getElementById("natperstip").onclick=function(){
+        
+        
+        document.getElementById("natperstip").innerHTML= " <h3>A non-natural person is a) a company, or b) a partnership where one or more members is a company, or c) a collective investment scheme eg a unit trust</h3>" ;
+       
+        
+        
+    }
+    
+    document.getElementById("clearnatperstip").onclick=function(){
+        
+        
+        document.getElementById("natperstip").innerHTML = "click here for meaning of non-natural person";
+        
+    }
+    
+    
+    document.getElementById("qualpurptip").onclick=function(){
+        
+        
+        document.getElementById("qualpurptip").innerHTML= " <h1>If the property is in use for one of the purposes shown in the boxes below, then certain reliefs may be available under SDT or ATED rules</h1>" ;
+       
+        
+        
+    }
+    
+    document.getElementById("clearqualpurptip").onclick=function(){
+        
+        
+        document.getElementById("qualpurptip").innerHTML = "click here for meaning of qualifying purpose";
+        
+    }
+    
+   
+ 
+
+
+</script>
+    
+  
+    
+
+    
+    <iframe width="360" height="115" src="https://www.youtube.com/embed/hb-RPGhpBSI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <p><a href="#userN"> Back to username</a></p>
+        <p><a href="#top"> Back to top</a></p>
+
+        </body>
+
+
+</html>
