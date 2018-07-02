@@ -1,11 +1,13 @@
 <?php
 session_start();
-$_SESSION['views'] =1;
-$_SESSION['userid'] = $_POST['userid'];
+//$_SESSION['userid'] = userid;
+
 ?>
 
 
 <html>
+    
+    
     <head>
     <title>Diagnose Your Tax Position on Property Purchases</title><br/><br/>
     <title>Registration and Login </title>
@@ -14,6 +16,23 @@ $_SESSION['userid'] = $_POST['userid'];
     
     
     </head>
+    
+    <body>
+                
+      <link rel="stylesheet" type="text/css" href="webpageCSS.css">
+         <div id="section">  
+            <h1 style = "color: blue; font-size:200%">Digital Tax Aid </h1><br/><br/>
+            <h2> Buying Property</h2><br/><br/>
+           <h3 id="squid">Diagnosing The SDLT, ATED and CGT Implications</h3><br/><br/>   
+             
+    
+    
+             </div>
+
+        
+                
+    </body>
+
     
     <header>
         
@@ -26,26 +45,7 @@ $_SESSION['userid'] = $_POST['userid'];
             </ul>
         <div class="nav-login">
             
-            <?php
-                if(isset($_SESSION['userid']))  {
-                  echo    ' <form action="resproplogout.php" method="post">
-                  <button type="submit" name="submit">logout</button>  
-                    
-                   </form>; 
-                }else
-                    
-                {
-                    echo    ' <form action="resproplogin.php" method="post">
-                  <input type="text" name="username" placehplder="username">login</button>  
-                    
-                   </form>; 
-                    
-                }
-            
-            
-            ?>
          
-            
             
             
             
@@ -61,9 +61,13 @@ $_SESSION['userid'] = $_POST['userid'];
             
             </div>
             
-        </div>
-        
+            </div>
+
+  
+            
+            
         </nav>
     
     
     </header>
+</html>

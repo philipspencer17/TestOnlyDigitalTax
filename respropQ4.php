@@ -1,8 +1,8 @@
-       <html>
+  <html>
 
     <head>
          
-        <form  action ="respropQ4.php" method ="POST"></form>
+        <form  action ="respropQ5.php" method ="POST"></form>
         <script type="text/javascript" src="jquery-3.3.1.min.js"></script> 
         <style type="text/css">   
           #submission
@@ -20,15 +20,15 @@
 
         <meta charset = "UTF-8">
 
-        
+      
        
      </head>
-           
-           
-           
-    <body>
-                
-      <link rel="stylesheet" type="text/css" href="webpageCSS.css">
+      
+      
+      <body>
+          
+            <link rel="stylesheet" type="text/css" href="webpageCSS.css">
+    
          <div id="section">  
             <h1 style = "color: blue; font-size:200%">Digital Tax Aid </h1>
             <h2> Buying Property</h2>
@@ -47,23 +47,23 @@
 
 <?php
     
-    $natpers = $_POST['t'];
-  
+    $fiveC = $_POST['fiveC'];
+   
 
-        if(isset($_POST['t'])) {
+        if(isset($_POST['fiveC'])) {
 
         
          
-        echo "Your response to whether the property has been bought by a non-natural person was that it was acquired by a "." ".$natpers."<br/><br/>";
+        echo  "Your response to whether or not the property value is greater than £500,000 is that it is "." "."$fiveC"."<br/><br/>";
             
         }
 
           
-        if ($natpers == "np")
+        if ($fiveC == "Not over")
         
         {
             
-        include ("respropAnswerB.php");
+        include ("respropAnswerC.php");
             
             
   
@@ -73,7 +73,7 @@
         }
         else
         {
-            echo "Please now answer the question below<br/><br/>";
+            echo "Please now answer the final question below<br/><br/>";
         }
          
           
@@ -86,7 +86,7 @@
         <script type="text/javascript">
         
     
-        if ($natpers == "nnp")
+        if ($fiveC == "Yes over")
             {
                 #alt;
             }
@@ -99,16 +99,17 @@
         
              
     <div id = "alt">
-               <form  action ="respropQ4.php" method ="POST" name = "submit">    
+               <form  action ="respropQ5.php" method ="POST" name = "submit">    
+            <li><b>Is the property in a qualifying business use?</b></li><br><br>
                  
-             <li> <b>Value over £500,000? </b></li><br><br>
+          
                
                
-                Over £500k <input type = "radio" name = "fiveC" value = "Yes over"><br/><br/>
+                Yes <input type = "radio" name = "QB" required value = "Yes"><br/><br/>
                
-                Not over £500k <input type = "radio" name = "fiveC" value = "Not over"> 
+                No <input type = "radio" name = "QB" required value = "No"> 
                    
-             <input type="submit" id="submission" name="enter" value="Click here to Submit Your Response"><br><br/>
+            <input type="submit" id="submission" name="enter" value="Click here to Submit Your Response"><br><br/>
                
                 </form>
             </div>
@@ -120,4 +121,4 @@
 
 ?>
 
-  
+   

@@ -4,7 +4,8 @@
          
           <form  action ="respropQ2.php" method ="POST">
         <script type="text/javascript" src="jquery-3.3.1.min.js"></script> 
-        <style type="text/css">   
+        <style type="text/css"> 
+           
           #submission
        {
            
@@ -49,8 +50,16 @@
 
           
           <div container id=contain>
-
-        <h1>Property Questionnaire</h1>
+  <link rel="stylesheet" type="text/css" href="webpageCSS.css">
+       <div id="section"> 
+           
+            <h1 style = "color: blue; font-size:200%">Digital Tax Aid </h1>
+            <h2> Buying Property</h2>
+           <h3 id="squid">Diagnosing The SDLT, ATED and CGT Implications</h3><br/><br/> <br/><br/>   
+             
+    
+    
+             </div>
 
  
           <div id="#error"></div>

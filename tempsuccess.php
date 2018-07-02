@@ -3,7 +3,7 @@
 if (isset($_POST['submit'])) {
     
     include_once 'taxdatabase.php';
-   $userid = $_POST ["userid"];
+ //  $userid = $_POST ["userid"];
     $fname = $_POST ["fname"];
      $lname =  $_POST ["lname"];
     $email = $_POST ["email"];
@@ -20,6 +20,33 @@ or	die('Could not connect: ');
 
      echo "Well done. You are successfully registered".$fname." ".$lname;
 //     header("Location: ../respropsignup.php?signup=success");
-    exit();                                        
-        
+ //   exit(); 
 }
+?>
+<html>
+     <body>
+                
+      <link rel="stylesheet" type="text/css" href="webpageCSS.css">
+         <div id="section">  
+            <h1 style = "color: blue; font-size:200%">Digital Tax Aid </h1>
+            <h2> Buying Property</h2>
+           <h3 id="squid">Diagnosing The SDLT, ATED and CGT Implications</h3><br/><br/> <br/><br/>   
+             
+    
+    
+             </div>
+
+        
+                
+    </body>
+
+    <h2>LogIn for Dignostic Check Questions</h2>
+            <form class="proceed" action ="resproplogin.php" method="post">
+                
+                
+             
+                <button type="submit" name="submit">click to login</button>
+            </form>
+        
+
+</html>
