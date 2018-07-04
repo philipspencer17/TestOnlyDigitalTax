@@ -30,4 +30,5 @@ Note that if one of the motives for buying the property was to realise a gain on
     ?>
 <html>
   <p><a href="respropQ4.php"> Back to previous page</a></p>
+<p><a href="respropsummary.php"> Click to see summary of responses</a></p><br/><br/>;
 </html>

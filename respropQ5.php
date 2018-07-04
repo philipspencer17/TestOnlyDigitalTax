@@ -47,8 +47,8 @@
      session_start();
    
        $userid = $_SESSION ["userid"];   
-
-    $QB = $_POST['QB'];
+ $QB = $_POST['QB'];
+   
  //      $userid = $_POST ["userid"];
    
 
@@ -81,10 +81,10 @@
 ?>       
         
 <html>
-  <p><a href="respropQ4.php"> Back to previous page</a></p>
+  <p><a href="respropQ4.php"> Back to previous page</a></p><br/><br/>;
+ 
 </html>
 
-        
-        
+     
 
   

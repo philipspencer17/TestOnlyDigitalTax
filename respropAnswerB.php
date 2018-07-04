@@ -29,6 +29,7 @@ echo
 
 <html>
   <p><a href="respropQ2.php"> Back to previous page</a></p>
+    <p><a href="respropsummary.php"> Click to see summary of responses</a></p><br/><br/>;
 </html>
 
 
