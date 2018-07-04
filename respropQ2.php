@@ -1,4 +1,5 @@
-            <html>
+
+<html>
 
     <head>
          
@@ -42,12 +43,14 @@
 
 </html>
 
+
 <?php
     
 
 
+
         if(isset($_POST['fname']) && isset($_POST['lname']) && isset($_POST['Residential'])) {
-            $userid = $_POST ["userid"];
+       $userid = $_POST['userid'];
         $fname = $_POST['fname'];
          $lname = $_POST['lname'];
             $Residential = $_POST['Residential'];
@@ -66,7 +69,7 @@ or	die('Could not connect: ');
     $result =mysqli_query($conn,$sql);
 //        $result =mysqli_query($conn,"SELECT count(*) FROM useranswers");
 
-     echo "Well done. You are successfully registered".$fname." ".$lname;
+  //   echo "Well done. You are successfully registered".$fname." ".$lname;
 //     header("Location: ../respropsignup.php?signup=success");
  //   exit(); 
 }
@@ -123,14 +126,12 @@ or	die('Could not connect: ');
             <input type="submit" id="submission" name="enter" value="Click here to Submit Your Response"><br><br/>
                 </form>
             </div>
-    
-</html>
-        
-          
-<?php
-
-?>
-
-        
+<html>
+  <p><a href="respropQ1.php"> Back to previous page</a></p>
+</html>  
+    <?php
+        $_SESSION['userid']  = $userid;
+        echo '<a href="respropQ2.php'.SID.'"></a>';
+    ?>
       
          

@@ -1,6 +1,7 @@
 <?php
     
     include_once  'respropheader.php';
+    echo $_SESSION['userid'];
  ?>   
     <section class="main-container">
         <div class="main-wrapper">

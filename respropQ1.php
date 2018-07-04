@@ -1,4 +1,6 @@
- <html>
+
+
+<html>
 
     <head>
          
@@ -67,7 +69,8 @@
         
           
            <form  action ="respropQ2.php" method ="POST" name = "submit">
-          First Name: <input type = "text" id ="fname" name = "fname" required ><br><br>
+        User ID: <input type = "text" id = "id" name = "userid" required><br><br>
+          First Name: <input type = "text" id ="fname" name = "fname" required  value="<?php if(isset($_POST['name'])){echo htmlentities* $_POST['name'];}?>"><br><br>
           Second Name: <input type = "text" id = "lname" name = "lname" required><br><br>
          
                
@@ -126,7 +129,9 @@ Non-Residential?<input id = "Residential" type = "radio" name = "Residential" re
  
 </script>
     
-           
+      
+  <p><a href="respropwebpage.php"> Back to web page</a></p>
+    
               
               
         </body>

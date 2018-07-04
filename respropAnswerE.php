@@ -22,9 +22,13 @@ ii) Annual Tax on Enveloped Dwellings (‘ATED’) arises. An ATED return is req
 iii) Capital Gains Tax (‘CGT’) will arise on any gain realised on the sale of the property, The rate is 28% where ATED (above) has applied to the property. If there is an element of the gain not taxed as an ATED-related gain, this may be subject to tax a a rate of 20% for non-resident companies and normal corporation tax rates to UK companies.   
 
 	
-     [Check here if you would like to see a calculation of your CGT liability - html form insert y/n]
+     [Check here if you would like to see a calculation of your CGT liability - html form insert y/n]"
 
  
 
 
     ?>
+    
+<html>
+  <p><a href="respropQ4.php"> Back to previous page</a></p>
+</html>

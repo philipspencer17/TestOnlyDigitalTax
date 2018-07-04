@@ -48,6 +48,7 @@
 <?php
     
     $fiveC = $_POST['fiveC'];
+       $userid = $_POST ["userid"];   
    
 
         if(isset($_POST['fiveC'])) {
@@ -114,11 +115,7 @@
                 </form>
             </div>
     
+
+  <p><a href="respropQ3.php"> Back to previous page</a></p>
 </html>
-        
-          
-<?php
-
-?>
-
    

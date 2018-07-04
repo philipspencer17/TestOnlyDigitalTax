@@ -1,6 +1,9 @@
 <?php
 
-echo "In this case:<br/><br/>
+echo "
+    You answered No to ‘Is the property residential? <br/><br/>
+
+    In this case:<br/><br/>
 
     i) Commercial rates of Stamp Duty Land Tax('SDLT') apply in England and Northern Ireland. The current rates and bands are as follows;<br/><br/>
     . 
@@ -16,8 +19,13 @@ echo "In this case:<br/><br/>
    Individuals and companies may, however, find that any profit may be treated as income if the property was bought with a  view to sale at a profit. In that situation, the profit can be taxed at the normal marginal income tax rate (for individuals) or 20% for non-resident companies and corporation tax for UK resident companies.<br/><br/> 
 
 	
-     [Check here if you would like to see a calculation of your CGT liability - html form insert y/n]"
+     [Check here if you would like to see a calculation of your CGT liability - html form insert y/n] <br/><br/>"
+    
+  
     
 
 
 ?>
+<html>
+  <p><a href="respropQ1.php"> Back to previous page</a></p>
+</html>

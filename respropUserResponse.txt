@@ -1,3 +1,25 @@
+Pop up Messages:-
+
+
+A 'Non-Natural Person' is one of the following; 
+
+    a company, or
+    a partnership where one or more members is a company, or
+    a collective investment scheme eg a unit trust. 
+    
+    
+    
+The valuation threshold relates to the value of the property at 1 April 2017 or, if the property was bought later, at the time of acquisition. Property values are reassessed every five years, so there will be a genera; revaluation on 1 April 2022 (i.e. 5 years after 1 April 2017) and subsequent 5 yearly anniversaries. 
+
+
+The property can satisfy the qualifying business condition when it has been acquired for certain purposes such as property rental, commercial development or use as trading premises. Further specific advice may be necessary to determine whether a particular property situation meets this criteria.  
+
+
+
+
+
+
+
 
 
 A.  You answered No to ‘Is the property residential?’
@@ -124,3 +146,6 @@ iii) Capital Gains Tax (‘CGT’) will arise on any gain realised on the sale o
 
 	
      [Check here if you would like to see a calculation of your CGT liability - html form insert y/n]
+     
+     
+     =============================

@@ -1,15 +1,15 @@
 <?php
 
-if (isset($_POST['submit'])) {
+if (isset($_POST["submi"])) {
     
     include_once 'taxdatabase.php';
- //  $userid = $_POST ["userid"];
+   $userid = $_POST ["userid"];
     $fname = $_POST ["fname"];
      $lname =  $_POST ["lname"];
     $email = $_POST ["email"];
     $password = $_POST ["password"];
     
-    $db = mysqli_connect('localhost', 'root', "root", 'Taxdata')
+    $db = mysqli_connect('localhost', 'root', 'root', 'Taxdata')
 
 or	die('Could not connect: ');
     $sql = "INSERT INTO users (userid,fname,lname, email, password) VALUES ('$userid','$fname', '$lname', '$email', '$password')";
@@ -18,7 +18,7 @@ or	die('Could not connect: ');
     $result =mysqli_query($conn,$sql);
 //        $result =mysqli_query($conn,"SELECT count(*) FROM users");
 
-     echo "Well done. You are successfully registered".$fname." ".$lname;
+  //   echo "Well done. You are successfully registered".$fname." ".$lname;
 //     header("Location: ../respropsignup.php?signup=success");
  //   exit(); 
 }
@@ -39,7 +39,7 @@ or	die('Could not connect: ');
         
                 
     </body>
-
+    $userid
     <h2>LogIn for Dignostic Check Questions</h2>
             <form class="proceed" action ="resproplogin.php" method="post">
                 

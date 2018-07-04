@@ -25,3 +25,10 @@ echo
      [Check here if you would like to see a calculation of your CGT liability - html form insert y/n]"
     
     ?>
+
+
+<html>
+  <p><a href="respropQ2.php"> Back to previous page</a></p>
+</html>
+
+

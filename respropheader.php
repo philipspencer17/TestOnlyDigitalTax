@@ -1,6 +1,12 @@
 <?php
 session_start();
-//$_SESSION['userid'] = userid;
+
+if(isset($_POST["userid"]))
+{
+$_SESSION['userid'] = $_POST["userid"];
+
+    
+}
 
 ?>
 
@@ -45,19 +51,36 @@ session_start();
             </ul>
         <div class="nav-login">
             
-         
+         <?php
             
-            
-            
-            
-            <form action="resproplogin.php" method="post">
+          if(isset($_SESSION['unserid'])) {
+              
+           echo '<form action="resproplogout.php" method="POST">
+            <button type="submit" name="submit">logout </button>
+            </form>';
+              
+          }  else
+              
+          {
+             echo '<form action="resproplogin.php" method="post">
             
             <input class="box" type="text" name ="userid" placeholder="userid">
             
             <input class = "secondbox" type="password" name ="password" placeholder="password">
             <button type="submit" name="submit">Login</button>
             </form>
-            <a href="respropsignup.php" class= "box">Sign up</a>
+            <a href="respropsignup.php" class= "box">Sign up</a>';
+              
+              
+          }
+            
+            
+        ?>
+            
+            
+            
+            
+            
             
             </div>
             

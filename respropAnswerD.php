@@ -27,7 +27,7 @@ iii) Capital Gains Tax (‘CGT’) will be payable on capital gains realised. Fo
 Note that if one of the motives for buying the property was to realise a gain on sale, any profit could be treated as income from trading. 
 "
 
- 
-
-
     ?>
+<html>
+  <p><a href="respropQ4.php"> Back to previous page</a></p>
+</html>

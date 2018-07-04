@@ -28,6 +28,19 @@
             margin-top: : 5px;
            float: left
        }
+              
+              
+              
+            #intro
+              
+              {
+                  
+                  
+                  width:80%;
+                  
+              }
+              
+              
            
           
                     #nextclick
@@ -66,7 +79,7 @@
         <div id="intro">
               
         <p>
-            
+         
         <h4>
          <br/><br/><br/><br/>   
         Philip Spencer has spent 44 years in the accounting profession, specialising in taxation. He is the author of Property Tax Planning published by Bloomsbury, now in its 15th edition.<br/><br/>

@@ -45,6 +45,7 @@
 <?php
     
     $QB = $_POST['QB'];
+       $userid = $_POST ["userid"];
    
 
         if(isset($_POST['QB'])) {
@@ -67,9 +68,7 @@
         }
         else
         {
-            include ("respropAnswerD.php<br/><br/><br/><br/><br/><br/>
-            ===========================================================
-            ");
+            include ("respropAnswerD.php");
              exit();
         }
          
@@ -77,8 +76,10 @@
           
 ?>       
         
-
 <html>
+  <p><a href="respropQ4.php"> Back to previous page</a></p>
+</html>
+
         
         
 

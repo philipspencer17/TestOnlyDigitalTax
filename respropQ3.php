@@ -1,4 +1,6 @@
-       <html>
+
+
+<html>
 
     <head>
          
@@ -46,20 +48,32 @@
 </html>
 
 <?php
-    
-    $natpers = $_POST['t'];
+    $_SESSION['userid'] = 'userid';
+    $natperson = $_POST["t"];
+       $userid = 'userid' ;
   
 
         if(isset($_POST['t'])) {
 
         
          
-        echo "Your response to whether the property has been bought by a non-natural person was that it was acquired by a "." ".$natpers."<br/><br/>";
+        echo "Your response to whether the property has been bought by a non-natural person was that it was acquired by a "." ".$natperson."<br/><br/>";
+            
+            
+        include_once 'taxdatabase.php';
+    
+    $db = mysqli_connect('localhost', 'root', "root", 'Taxdata')
+
+or	die('Could not connect: ');
+    $sql = "UPDATE useranswers SET  natperson = $natperson  WHERE userid = userid' ";
+
+    
+    $result =mysqli_query($conn,$sql);
             
         }
 
           
-        if ($natpers == "np")
+        if ($natperson == "natural person")
         
         {
             
@@ -86,7 +100,7 @@
         <script type="text/javascript">
         
     
-        if ($natpers == "nnp")
+        if ($natpers == "non-natural person")
             {
                 #alt;
             }
@@ -113,11 +127,14 @@
                 </form>
             </div>
     
+
+
+  <p><a href="respropQ2.php"> Back to previous page</a></p>
 </html>
-        
-          
+
 <?php
-
-?>
-
-  
+        $_SESSION['userid']  = $userid;
+        echo '<a href="respropQ2.php'.SID.'"></a>';
+    ?>
+      
+           

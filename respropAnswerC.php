@@ -26,3 +26,6 @@ echo
 
 
     ?>
+<html>
+  <p><a href="respropQ3.php"> Back to previous page</a></p>
+</html>

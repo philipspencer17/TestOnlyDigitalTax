@@ -4,7 +4,7 @@ if (isset($_POST['submit'])) {
     session_start();
     session_unset();
     session_destroy();
-    heade("Location:respropregisterlogin.php");
+    header("Location:respropwebpage.php");
     exit();
     
     

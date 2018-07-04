@@ -1,7 +1,11 @@
 <?php
    
     include_once  'respropheader.php';
-    // $userid = $_POST ["userid"];
+    if(isset($_POST['userid']))
+{
+$_SESSION['userid'] = userid;
+    
+}
  ?>   
     <section class="main-container">
         <div class="main-wrapper">
