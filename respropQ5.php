@@ -44,8 +44,12 @@
 
 <?php
     
+     session_start();
+   
+       $userid = $_SESSION ["userid"];   
+
     $QB = $_POST['QB'];
-       $userid = $_POST ["userid"];
+ //      $userid = $_POST ["userid"];
    
 
         if(isset($_POST['QB'])) {

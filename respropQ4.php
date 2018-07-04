@@ -1,4 +1,11 @@
-  <html>
+<php?
+  
+
+      
+?>
+
+
+<html>
 
     <head>
          
@@ -46,9 +53,9 @@
 </html>
 
 <?php
-    
+    session_start();
     $fiveC = $_POST['fiveC'];
-       $userid = $_POST ["userid"];   
+       $userid = $_SESSION ["userid"];   
    
 
         if(isset($_POST['fiveC'])) {

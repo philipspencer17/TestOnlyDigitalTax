@@ -1,4 +1,5 @@
 
+
 <html>
 
     <head>
@@ -47,10 +48,11 @@
 <?php
     
 
-
+        
 
         if(isset($_POST['fname']) && isset($_POST['lname']) && isset($_POST['Residential'])) {
        $userid = $_POST['userid'];
+        $_SESSION = $userid;
         $fname = $_POST['fname'];
          $lname = $_POST['lname'];
             $Residential = $_POST['Residential'];
@@ -129,9 +131,6 @@ or	die('Could not connect: ');
 <html>
   <p><a href="respropQ1.php"> Back to previous page</a></p>
 </html>  
-    <?php
-        $_SESSION['userid']  = $userid;
-        echo '<a href="respropQ2.php'.SID.'"></a>';
-    ?>
+    
       
          

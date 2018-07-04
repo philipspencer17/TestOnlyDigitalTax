@@ -1,5 +1,7 @@
 
 
+
+
 <html>
 
     <head>
@@ -48,9 +50,10 @@
 </html>
 
 <?php
-    $_SESSION['userid'] = 'userid';
+    session_start();
     $natperson = $_POST["t"];
-       $userid = 'userid' ;
+    $userid =$_SESSION['userid'] ;
+  //    $userid = 'userid' ;
   
 
         if(isset($_POST['t'])) {
@@ -132,9 +135,5 @@ or	die('Could not connect: ');
   <p><a href="respropQ2.php"> Back to previous page</a></p>
 </html>
 
-<?php
-        $_SESSION['userid']  = $userid;
-        echo '<a href="respropQ2.php'.SID.'"></a>';
-    ?>
-      
+    
            
