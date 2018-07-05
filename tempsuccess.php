@@ -16,11 +16,7 @@ or	die('Could not connect: ');
 
     
     $result =mysqli_query($conn,$sql);
-//        $result =mysqli_query($conn,"SELECT count(*) FROM users");
-
-  //   echo "Well done. You are successfully registered".$fname." ".$lname;
-//     header("Location: ../respropsignup.php?signup=success");
- //   exit(); 
+  exit(); 
 }
 ?>
 <html>
@@ -39,7 +35,7 @@ or	die('Could not connect: ');
         
                 
     </body>
-    $userid
+    
     <h2>LogIn for Dignostic Check Questions</h2>
             <form class="proceed" action ="resproplogin.php" method="post">
                 

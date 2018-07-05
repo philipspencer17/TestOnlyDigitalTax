@@ -53,7 +53,7 @@ $_SESSION['userid'] = $_POST["userid"];
             
          <?php
             
-          if(isset($_SESSION['unserid'])) {
+          if(isset($_SESSION['userid'])) {
               
            echo '<form action="resproplogout.php" method="POST">
             <button type="submit" name="submit">logout </button>
