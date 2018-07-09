@@ -23,6 +23,15 @@
            
    
               }
+            
+            
+              #qbtip {
+                  
+          position:relative;
+        visibility: visible;
+            
+            
+                   }
               </style>
 
         <meta charset = "UTF-8">
@@ -137,9 +146,11 @@ or	die('Could not connect: ');
              
     <div id = "alt">
                <form  action ="respropQ5.php" method ="POST" name = "submit">    
-            <li><b>Is the property in a qualifying business use?</b></li><br><br>
+            
                  
-          
+          <div id="qbtip"><li><b>Was the property acquired for qualifying business use? </b></li><br><br></div>
+                   
+                <button type="button" id = "qualifyingbustip">Hover here for explanation re qalifying business</button>
                
                
                 Yes <input type = "radio" name = "QB" required value = "Yes"><br/><br/>
@@ -151,7 +162,29 @@ or	die('Could not connect: ');
                 </form>
             </div>
     
+    
+    <script type="text/javascript">
+   
+       $('#qualifyingbustip').mouseover(function(){
+           
+            $('#qualifyingbustip').html('The property can satisfy the qualifying business condition when it has been acquired for certain purposes such as property rental, commercial development or use as trading premises. Further specific advice may be necessary to determine whether a particular property situation meets this criteria.<br/><br/><br/>');
+           
+                                      });
+        
+        $('#qualifyingbustip').mouseleave(function(){
+           
+            $('#qualifyingbustip').fadeOut(5000).html("refresh page to see again the meaning of qualifying business");
+                                      });
+        
+        
+        
+ 
+</script>
+    
+    
+    
 
   <p><a href="respropQ3.php"> Back to previous page</a></p>
+    <p><a href="respropsignup.php">click for log out page</a></p>
 </html>
    

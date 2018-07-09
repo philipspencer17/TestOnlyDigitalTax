@@ -1,22 +1,20 @@
 <?php
 
-if (isset($_POST["submi"])) {
-    
+if (isset($_POST["submit"])) {
     include_once 'taxdatabase.php';
    $userid = $_POST ["userid"];
     $fname = $_POST ["fname"];
      $lname =  $_POST ["lname"];
     $email = $_POST ["email"];
     $password = $_POST ["password"];
-    
+
     $db = mysqli_connect('localhost', 'root', 'root', 'Taxdata')
 
-or	die('Could not connect: ');
+or	die('Could not connect: ');      
+
     $sql = "INSERT INTO users (userid,fname,lname, email, password) VALUES ('$userid','$fname', '$lname', '$email', '$password')";
 
-    
     $result =mysqli_query($conn,$sql);
-  exit(); 
 }
 ?>
 <html>
@@ -32,17 +30,17 @@ or	die('Could not connect: ');
     
              </div>
 
-        
-                
-    </body>
-    
-    <h2>LogIn for Dignostic Check Questions</h2>
+            <h2>LogIn for Dignostic Check Questions</h2>
             <form class="proceed" action ="resproplogin.php" method="post">
                 
                 
              
                 <button type="submit" name="submit">click to login</button>
             </form>
+                
+    </body>
+    
+
         
 
 </html>

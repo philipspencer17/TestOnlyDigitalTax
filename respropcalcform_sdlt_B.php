@@ -1,10 +1,27 @@
-<?php
+<head>
+    <title>Diagnose Your Tax Position on Property Purchases</title><br/><br/>
+    <title>Registration and Login </title>
+    <link rel="stylesheet" type="text/css" href="respropregandlogin.css">
     
-    include_once  'respropheader.php';
-   
- ?>   
-<html>
- <head> 
+    
+    
+    </head>
+    
+    <body>
+                
+      <link rel="stylesheet" type="text/css" href="webpageCSS.css">
+         <div id="section">  
+            <h1 style = "color: blue; font-size:200%">Digital Tax Aid </h1><br/><br/>
+            <h2> Buying Property</h2><br/><br/>
+           <h3 id="squid">Diagnosing The SDLT, ATED and CGT Implications</h3><br/><br/>   
+             
+    
+    
+             </div>
+
+        
+                
+    </body><head> 
     <style text="text/css">
     a {
     text-decoration: none;
@@ -165,21 +182,24 @@ header .nav-login a {
     
     <section class="main-container1">
         <div class="main-wrapper1">
-            <h2>Sign Up</h2>
+            <h2>Calculate Your SDLT LIbility</h2>
             
-            <form class="signup1form" action ="tempsuccess.php" method="post">
+            <form class="signup1form" action ="respropcalc_sdlt_B.php" method="post">
                
               <ul>  <input type="text" name="userid" required placeholder="User ID"></ul> 
-              <ul>  <input type="text" name="fname" required placeholder="FirstName"></ul>
-             <ul>  <input type="text" name="lname" required placeholder="LastName"></ul> 
-              <ul> <input type="text" name="email" required placeholder="email"></ul> 
-               <ul><input type="password" name="password" required placeholder="Password"></ul> 
-                
+              <ul>  <input type="text" name="price" required placeholder="Enter purchase price"></ul>
              
-                <button  class="button" type="submit" name="submit">Sign Up</button>
+             
+                <button  class="button" type="submit" name="submit">click for calculation</button>
                     
             </form>
         
+            
+            
+            
+            
+            
+            
         
         </div>
     
@@ -187,6 +207,10 @@ header .nav-login a {
     
     
     </section>
+
+<p><a href="respropsignup.php">click for log out page</a></p>
+ <p><a href="respropAnswerB.php"> Back to previous page</a></p>
+    <p><a href="respropsummary.php"> Click to see summary of responses</a></p><br/><br/>;
 </html>
     <?php
     include_once  'respropfooter.php';

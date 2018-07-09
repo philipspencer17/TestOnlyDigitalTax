@@ -11,8 +11,8 @@ or	die('Could not connect: ');
 
 $sql = "SELECT *
 		FROM useranswers
-		WHERE userid = '$userid' 
-        ORDER BY Diagnosticref";
+		WHERE userid = '$userid' && max(Diagnosticref)";
+        
 		
 if ($result=mysqli_query($db,$sql))
     
@@ -22,7 +22,7 @@ if ($result=mysqli_query($db,$sql))
     echo $row[1]."<br/><br/>";
     echo "Thank you for completing the diagnostic check<br/><br/>";
     echo "Your reference number for this attempt was ".$row [0]."<br/><br/>";
-    echo "The date and time when you completed your answers was"." ".$row[6]."<br/><br/>";
+    echo "The date and time when you completed your answers was"." ".$row[7]."<br/><br/>";
     echo "In this attempt, you answered the questions as follows<br/><br/>";
     echo "Whether the property acquired was residential?....".$row[2]."<br/><br/>";
     echo"Whether the property was acquired by a 'non-natural person'....".$row[3];
@@ -45,5 +45,10 @@ mysqli_close($db);
 
 
 
-?>
+
  
+
+?>
+<html>
+<p><a href="respropsignup.php">click for log out page</a></p>
+</html> 

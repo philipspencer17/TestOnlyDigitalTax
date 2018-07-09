@@ -78,6 +78,7 @@ or	die('Could not connect: ');
             
     $sql2 = "UPDATE useranswers SET  qualifyinguse = '$QB'  WHERE Diagnosticref = $row[0] ";
 
+        
     }
     $result2 =mysqli_query($conn,$sql2);
             
@@ -101,7 +102,7 @@ or	die('Could not connect: ');
         }
         else
         {
-            include ("respropAnswerD.php");
+            include ("respropAnswerE.php");
              exit();
         }
          
@@ -111,6 +112,8 @@ or	die('Could not connect: ');
         
 <html>
   <p><a href="respropQ4.php"> Back to previous page</a></p><br/><br/>;
+    
+    <p><a href="respropsignup.php">click for log out page</a></p>
  
 </html>
 

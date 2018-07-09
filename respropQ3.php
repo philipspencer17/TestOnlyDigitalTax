@@ -20,6 +20,14 @@
            
    
               }
+            
+            
+               #nptip {
+                  
+          position:relative;
+        visibility: visible;
+            
+                   }
               </style>
 
         <meta charset = "UTF-8">
@@ -53,13 +61,9 @@
     session_start();
     $natperson = $_POST["t"];
     $userid =$_SESSION['userid'] ;
-  //    $userid = 'userid' ;
-  
-
-        if(isset($_POST['t'])) {
-
-        
-         
+   
+    if(isset($_POST['t'])) {
+     
         echo "Your response to whether the property has been bought by a non-natural person was that it was acquired by a "." ".$natperson."<br/><br/>";
             
             
@@ -130,10 +134,15 @@ or	die('Could not connect: ');
         
              
     <div id = "alt">
-               <form  action ="respropQ4.php" method ="POST" name = "submit">    
+               <form  action ="respropQ4.php" method ="POST" name = "submit">  
+                   
+                
                  
-             <li> <b>Value over £500,000? </b></li><br><br>
-               
+           
+                 <div id="valtip"><li><b>Was the property value over £500,000? </b></li><br><br></div>
+                   
+                <button type="button" id = "valuationtip">Hover here for explanation re value</button>
+                   
                
                 Over £500k <input type = "radio" name = "fiveC" value = "Yes over"><br/><br/>
                
@@ -144,9 +153,28 @@ or	die('Could not connect: ');
                 </form>
             </div>
     
+    <script type="text/javascript">
+   
+       $('#valuationtip').mouseover(function(){
+           
+            $('#valuationtip').html('The valuation threshold relates to the value of the property at 1 April 2017 or, if the property was bought later, at the time of acquisition. Property values are reassessed every five years, so there will be a general revaluation on 1 April 2022 (i.e. 5 years after 1 April 2017) and subsequent 5 yearly anniversaries.<br/><br/><br/>');
+           
+                                      });
+        
+        $('#valuationtip').mouseleave(function(){
+           
+            $('#valuationtip').fadeOut(5000).html("refresh page to see again the explanation re valuation");
+                                      });
+        
+        
+        
+ 
+</script>
+    
 
 
   <p><a href="respropQ2.php"> Back to previous page</a></p>
+<p><a href="respropsignup.php">click for log out page</a></p>
 </html>
 
     

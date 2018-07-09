@@ -18,6 +18,14 @@
            
    
               }
+            
+                #nptip {
+                  
+          position:relative;
+        visibility: visible;
+            
+            
+                   }
               </style>
 
         <meta charset = "UTF-8">
@@ -69,6 +77,7 @@ or	die('Could not connect: ');
 
     
     $result =mysqli_query($conn,$sql);
+    mysqli_close($db);
 //        $result =mysqli_query($conn,"SELECT count(*) FROM useranswers");
 
   //   echo "Well done. You are successfully registered".$fname." ".$lname;
@@ -119,7 +128,11 @@ or	die('Could not connect: ');
                <form  action ="respropQ3.php" method ="POST" name = "submit"> 
             
                    
-            <li><b>Non-Natural Person?</b></li><br><br>
+            
+                   
+                     <div id="nptip"><li><b>Was the property acquired by a Natural Person? </b></li><br><br></div>
+                   
+                <button type="button" id = "natpersontip">Hover here for meaning of 'Natural Person'</button>
                  
               Natural person: <input id="natpers" type = "radio" name = "t" required value = "natural person"> 
                 
@@ -128,8 +141,29 @@ or	die('Could not connect: ');
             <input type="submit" id="submission" name="enter" value="Click here to Submit Your Response"><br><br/>
                 </form>
             </div>
+    
+    <script type="text/javascript">
+   
+       $('#natpersontip').mouseover(function(){
+           
+            $('#natpersontip').html('The expression Natural Person excludes any of the following;  a company, or a partnership where one or more members is a company, or a collective investment scheme eg a unit trust.<br/><br/><br/>');
+           
+                                      });
+        
+        $('#natpersontip').mouseleave(function(){
+           
+            $('#natpersontip').fadeOut(5000).html("refresh page to see meaning of non-natural person again");
+                                      });
+        
+        
+        
+ 
+</script>
+    
+    
 <html>
   <p><a href="respropQ1.php"> Back to previous page</a></p>
+  <p><a href="respropsignup.php">click for log out page</a></p>
 </html>  
     
       
