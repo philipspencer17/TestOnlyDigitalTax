@@ -1,9 +1,23 @@
 <html>
+    <head>
+         
+        <form  action ="respropQ3.php" method ="POST"></form>
+        <script type="text/javascript" src="jquery-3.3.1.min.js"></script> 
+          <link rel="stylesheet" type="text/css" href="webpageCSS.css">
+         
+
+        <meta charset = "UTF-8">
+
+       
+     </head>
+    
 <body>
     
-<p>You answered Yes to ‘Is the property residential?’ and you answered Yes to ‘Is the owner a non-natural person?’. You also answered Yes to ‘Is the value more than £500,000 and No to ‘Is the property used for a qualifying business?’.
-
-
+ 
+    <div class = "response">
+    <h3>You answered Yes to ‘Is the property residential?’ and you answered Yes to ‘Is the owner a non-natural person?’. You also answered Yes to ‘Is the value more than £500,000 and No to ‘Is the property used for a qualifying business?’.</h3>
+    </div>
+  <div class= "answersection">
 In this case
 
 i) In England and Northern Ireland, Stamp Duty Land Tax (‘SDLT’) at the highest rate of 15% will be due on purchases over £500,000. In addition, there is a surcharge of 3% on the properties costing less than this. 
@@ -65,11 +79,10 @@ ii) Annual Tax on Enveloped Dwellings (‘ATED’) arises. An ATED return is req
 
 iii) Capital Gains Tax (‘CGT’) will arise on any gain realised on the sale of the property, The rate is 28% where ATED (above) has applied to the property. If there is an element of the gain not taxed as an ATED-related gain, this may be subject to tax a a rate of 20% for non-resident companies and normal corporation tax rates to UK companies. </p>  
 
-
+    </div>
 </body>
 
   
   <p><a href="respropQ4.php"> Back to previous page</a></p>
-    <p><a href="respropsummary.php"> Click to see summary of responses</a></p><br/><br/>;
-    <p><a href="respropsignup.php">click for log out page</a></p>
+      <p><a href="respropsummary.php"> Click to exit and logout</a></p><br/><br/>
 </html>

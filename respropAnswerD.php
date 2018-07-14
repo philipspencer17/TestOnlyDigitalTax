@@ -1,7 +1,26 @@
 <html>
+    
+    
+ <head>
+         
+        <form  action ="respropQ3.php" method ="POST"></form>
+        <script type="text/javascript" src="jquery-3.3.1.min.js"></script> 
+          <link rel="stylesheet" type="text/css" href="webpageCSS.css">
+         
 
+        <meta charset = "UTF-8">
 
-    <p>You answered Yes to ‘Is the property residential?’ and you answered Yes to ‘Is the owner a non-natural person?’. You also answered Yes to ‘Is the value more than £500,000 and Yes to ‘Is the property used for a qualifying business?</p>
+       
+     </head>
+    
+<body>
+    
+     
+     <div class = "response">
+    <h3>You had answered Yes to ‘Is the property residential?’ and you answered Yes to ‘Is the owner a non-natural person?’. You also answered Yes to ‘Is the value more than £500,000 and Yes to ‘Is the property used for a qualifying business?</h3>
+    </div>
+  
+     <div class= "answersection">
     
 <p> In this case:<br/><br/>
 
@@ -64,20 +83,19 @@
 
 Note that in Scotland, Land and Building Transaction Tax will instead apply and in Wales, Land Transaction Tax. Separate specific advice should be taken where a Scottish or Welsh property is involved. <br/><br/>
         
-         <p><a href="respropcalcform_sdlt_D.php"> Click for a calculation of SDLT due</a></p><br/><br/>;
+         <p><a href="respropcalcform_sdlt_D.php"> Click for a calculation of SDLT due</a></p><br/><br/>
 	
  ii) No Annual Tax on Enveloped Dwellings (‘ATED’) arises. As simplified ATED return is required to be submitted annually to HMRC to claim the relief.<br/><br/>
 
 iii) Capital Gains Tax (‘CGT’) will be payable on capital gains realised. For companies, the rate is 20%. <br/><br/>  
       
-        Note that if one of the motives for buying the property was to realise a gain on sale, any profit could be treated as income from trading.</p> 
+    Note that if one of the motives for buying the property was to realise a gain on sale, any profit could be treated as income from trading.</p> 
 
 
     
- 
-    
+    </div>
+</body>   
 <html>
   <p><a href="respropQ4.php"> Back to previous page</a></p>
-<p><a href="respropsummary.php"> Click to see summary of responses</a></p><br/><br/>;
-    <p><a href="respropsignup.php">click for log out page</a></p>
+  <p><a href="respropsummary.php"> Click to exit and logout</a></p><br/><br/>
 </html>

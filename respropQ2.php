@@ -6,48 +6,24 @@
          
         <form  action ="respropQ3.php" method ="POST"></form>
         <script type="text/javascript" src="jquery-3.3.1.min.js"></script> 
-        <style type="text/css">   
-          #submission
-       {
-           
-           width:210px;
-           height:40px;
-           color:darkgreen;
-           background-color: lightgray
-           
-           
-   
-              }
-            
-                #nptip {
-                  
-          position:relative;
-        visibility: visible;
-            
-            
-                   }
-              </style>
+          <link rel="stylesheet" type="text/css" href="webpageCSS.css">
+         
 
         <meta charset = "UTF-8">
 
-        
        
      </head>
                 
     <body>
                 
-      <link rel="stylesheet" type="text/css" href="webpageCSS.css">
-         <div id="section">  
-            <h1 style = "color: blue; font-size:200%">Digital Tax Aid </h1>
-            <h2> Buying Property</h2>
-           <h3 id="squid">Diagnosing The SDLT, ATED and CGT Implications</h3><br/><br/> <br/><br/>   
-             
     
+         <div id="section">  
+            <h1>Digital Tax Aid </h1>
+            <h2> Buying Property</h2>
+           <h3 id="squid">Diagnosing the SDLT, ATED and CGT Implications</h3><br/><br/> <br/><br/>   
     
              </div>
-
-        
-                
+          
     </body>
 
 </html>
@@ -55,17 +31,12 @@
 
 <?php
     
-
-        
-
-        if(isset($_POST['fname']) && isset($_POST['lname']) && isset($_POST['Residential'])) {
-       $userid = $_POST['userid'];
+    if(isset($_POST['userid'])) {
+        $userid = $_POST['userid'];
         $_SESSION = $userid;
-        $fname = $_POST['fname'];
-         $lname = $_POST['lname'];
-            $Residential = $_POST['Residential'];
+        $Residential = $_POST['Residential'];
          
-        echo $fname." ".$lname."<br/><br/> "."Your response to whether the property was residential was"." ".$Residential."<br/><br/>";
+        echo $userid."<br/>Your response to whether the property was residential was"." ".$Residential."<br/><br/>";
  
             
     include_once 'taxdatabase.php';
@@ -93,20 +64,17 @@ or	die('Could not connect: ');
         {
             
         include ("respropAnswerA.php");
-        //new code 30 June
+    
             exit();
-        // end of new code 30 June
+       
         }
         else
         {
             echo "Please now answer the question below<br/><br/>";
         }
          
-          
-          
 ?>       
-        
-
+     
 <html>
         
         <script type="text/javascript">
@@ -126,13 +94,10 @@ or	die('Could not connect: ');
              
     <div id = "alt">
                <form  action ="respropQ3.php" method ="POST" name = "submit"> 
-            
                    
-            
+                   <div id="nptip"><li><b>Was the property acquired by a Natural Person? </b></li><br><br></div>
                    
-                     <div id="nptip"><li><b>Was the property acquired by a Natural Person? </b></li><br><br></div>
-                   
-                <button type="button" id = "natpersontip">Hover here for meaning of 'Natural Person'</button>
+               <p><a href="respropnatpersmeaning.php"> click for meaning of Natural Person </a></p>
                  
               Natural person: <input id="natpers" type = "radio" name = "t" required value = "natural person"> 
                 
@@ -142,28 +107,9 @@ or	die('Could not connect: ');
                 </form>
             </div>
     
-    <script type="text/javascript">
-   
-       $('#natpersontip').mouseover(function(){
-           
-            $('#natpersontip').html('The expression Natural Person excludes any of the following;  a company, or a partnership where one or more members is a company, or a collective investment scheme eg a unit trust.<br/><br/><br/>');
-           
-                                      });
-        
-        $('#natpersontip').mouseleave(function(){
-           
-            $('#natpersontip').fadeOut(5000).html("refresh page to see meaning of non-natural person again");
-                                      });
-        
-        
-        
- 
-</script>
-    
-    
 <html>
   <p><a href="respropQ1.php"> Back to previous page</a></p>
-  <p><a href="respropsignup.php">click for log out page</a></p>
+  <p><a href="resproplogout.php">click for log out page</a></p>
 </html>  
     
       

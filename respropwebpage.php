@@ -4,7 +4,7 @@
            
              
     
-        <title>TestOnlyDigitalTax</title>
+        <title>respropwebpage</title>
            
            <script type="text/javascript" src="/Users/philipspencer/Desktop/Web Development/2-jquery/jquery-3.3.1.min.js"></script>     
  
@@ -18,45 +18,7 @@
            
         <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
         
-          <style type="text/css">   
-         
-              
-               #spacer
-       {
-           
-           margin-bottom: 10px;
-            margin-top: : 5px;
-           float: left
-       }
-              
-              
-              
-            #intro
-              
-              {
-                  
-                  
-                  width:80%;
-                  
-              }
-              
-              
-           
           
-                    #nextclick
-       {
-           
-           
-           margin-bottom: 10px;
-            margin-top: : 5px;
-           float: left
-           position: absolute;
-        
-       }
-              
-         
-           
-           </style>   
         </head>
 
         <body>
@@ -69,7 +31,7 @@
             
             <h1 style = "color: blue; font-size:200%">Digital Tax Aid </h1>
             <h2> Buying Property</h2>
-            <h3 id="squid">Diagnosing The SDLT, ATED and CGT Implications  
+            <h3 id="squid">Diagnosing the SDLT, ATED and CGT Implications  
              
     
     
@@ -78,33 +40,28 @@
               
         <div id="intro">
               
-        <p>
-         
+       
         <h4>
-         <br/><br/><br/><br/>   
+         <br/><br/>  
         Philip Spencer has spent 44 years in the accounting profession, specialising in taxation. He is the author of Property Tax Planning published by Bloomsbury, now in its 15th edition.<br/><br/>
             
-        This dignostic tool aims to provide guidelines on the likely SDLT, ATED and CGT implications of buying real property in the UK.<br/><br/> 
+        This dignostic tool aims to provide guidelines on the likely SDLT, ATED and CGT implications of buying real property in the UK. Note that this tool has been prepared as a prototype in a test project and its content should not be relied upon. <br/><br/> 
             
-        As Scotland and Wales have separate land transaction taxes, the references to SDLT relate to property purchases in the UK and Northern Ireland.  <br/><br/>
+        As Scotland and Wales have separate land transaction taxes, the references to SDLT relate to property purchases in England and Northern Ireland.  <br/><br/>
             
             
             
             
         </h4>    
             
-            
-            
-            
-        </p>      
-              
-              
-              
+               
         </div>
         
        <div id="spacer">
+           
+           
         
-                <h2>Already signed up? - click here to login</h2>
+                <h3>Already signed up? - click here to login</h3>
             <form class="proceed" action ="resproplogin.php" method="post">
                 
                 
@@ -113,11 +70,11 @@
             </form>
         </div>
               
-              <br/><br/><br/><br/><br/><br/><br/><br/>
+              <br/><br/><br/>
               
         <div id="nextclick">
         
-                <h2>Not yet signed up? - click here to sign up</h2>
+                <h3>Not yet signed up? - click here to sign up</h3>
             <form class="proceed" action ="respropsignup.php" method="post">
                 
                 

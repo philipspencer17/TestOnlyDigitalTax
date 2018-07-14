@@ -1,13 +1,6 @@
 <?php
 session_start();
 
-if(isset($_POST["userid"]))
-{
-$_SESSION['userid'] = $_POST["userid"];
-
-    
-}
-
 ?>
 
 
@@ -29,7 +22,7 @@ $_SESSION['userid'] = $_POST["userid"];
          <div id="section">  
             <h1 style = "color: blue; font-size:200%">Digital Tax Aid </h1><br/><br/>
             <h2> Buying Property</h2><br/><br/>
-           <h3 id="squid">Diagnosing The SDLT, ATED and CGT Implications</h3><br/><br/>   
+           <h3 id="squid">Diagnosing the SDLT, ATED and CGT Implications</h3><br/><br/>   
              
     
     
@@ -46,7 +39,7 @@ $_SESSION['userid'] = $_POST["userid"];
         
         <div class = "main-wrapper">
             <ul>
-            <li><a href="respropregisterlogin.php" class="box">Home</a></li>
+            <li><a href="respropregisterlogin.php" class="box">Login Home Page</a></li>
             
             </ul>
         <div class="nav-login">
@@ -66,17 +59,15 @@ else
    { 
              echo '<form action="resproplogin.php" method="post">
             
-            <input class="box" type="text" name ="userid" placeholder="userid">
+            <input class="box" type="text" name ="userid" required placeholder="User ID">
             
-            <input class = "secondbox" type="password" name ="password" placeholder="password">
+            <input class = "secondbox" type="password" name ="password" required placeholder="Password">
             <button type="submit" name="submit">Login</button>
             </form>
             <a href="respropsignup.php" class= "box">Sign up</a>';
-              
-              
+          
           }
-            
+           
             
         ?>
-            
             

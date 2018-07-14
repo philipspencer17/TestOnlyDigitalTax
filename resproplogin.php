@@ -7,11 +7,7 @@ if (isset($_POST['submit'])){
    $userid = $_POST ['userid'];
     $email = $_POST ['email'];
     $password = $_POST ['password'];  
-//    
-//   $_SESSION['userid'] =$row['userid'];
-//            $_SESSION['fname'] =$row['fname'];
-//            $_SESSION['lname'] =$row['lname'];
-//            $_SESSION['email'] =$row['email'];
+
     
     
         
@@ -22,3 +18,15 @@ if (isset($_POST['submit'])){
 
 
 ?>
+<html>
+
+<input type="text" name ="userid" placeholder="userid">
+            
+    echo '<form action="respropQ1.php" method="post">
+            <input type="password" name ="password" placeholder="password">
+            <button type="submit" name="submit">Login</button>
+            </form>'
+
+
+
+</html>

@@ -1,33 +1,132 @@
-<style type="text/css">
+<html>
+<head>
+
+
+
+
+
+       #contain
+      {
+              
+      margin-left: 20px;
+      }
+  h1{
+      color: blue; 
+      font-size:200%;
+    
+    }
            
-        h2{
+  h2{
         
-        color: green;
-        font-size: 200%
+  color: green;
+  font-size: 200%;
         
         }
-            .grey {
+
+    .answersection
+
+{
+    
+width: 50%;    
+margin: 20px;    
+}
+      
+  .overlay {
+  margin-left: 20px;
+  height:70%;
+  width: 50%;
+  background-color: #008CBA;
+}
+
+.helptip {
+  margin-left: 20px;
+  color: white;
+  font-size: 15px;
+  height: 100%;
+  width: 80%;
+  
+}
+
+ .response
+
+{
+    
+width: 70%;    
+margin: 20px;    
+}
+button {
+                  
+  width: 60px;
+height: 50px; 
+                  
+              }
+
+#contain
+            {
                 
-        color:black
-                
-            }
+     margin-left: 20px;
+}
+              
+#intro
+              
+ {
+                  
+padding:10px;
+margin-top: 20px;
+width:40%;
+border-style: none;
+border-color: lightcyan;
+                  
+              }
+.identry {
+    
+font-size: 16px;
+font-weight: bold;
+}
+
+ .linktolog {
             
-            #section {
+            margin-left: 20px;
+        }
+        
+
+            
+#section {
            
-           background-color:lightcyan;
-            padding: 20px;
-           }
-            a{
+ background-color:lightcyan;
+ padding: 20px;
+     }
+#tip {
+   
+        
+  color: white;
+  font-size: 200%; 
+    
+}
+ a{
                 
-            text-decoration:none
-            }
-            a:hover{
-                
-            text-decoration:underline;
-            color:blue;
-            }
+ text-decoration:none
+    }
+ #submission
+       {
+           
+    width:210px;
+    height:40px;
+    color:darkgreen;
+    background-color: lightgray
+           
+           
+   
+              }
+
+.squareone {
+    float: left
+    color: white;
+}
+            
             
            
+ 
            
-           </style>
-           
+</head>
+</html>

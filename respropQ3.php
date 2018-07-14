@@ -7,28 +7,9 @@
     <head>
          
         <form  action ="respropQ4.php" method ="POST"></form>
-        <script type="text/javascript" src="jquery-3.3.1.min.js"></script> 
-        <style type="text/css">   
-          #submission
-       {
-           
-           width:210px;
-           height:40px;
-           color:darkgreen;
-           background-color: lightgray
-           
-           
-   
-              }
-            
-            
-               #nptip {
-                  
-          position:relative;
-        visibility: visible;
-            
-                   }
-              </style>
+        <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+         <link rel="stylesheet" type="text/css" href="webpageCSS.css"> 
+        
 
         <meta charset = "UTF-8">
 
@@ -40,11 +21,11 @@
            
     <body>
                 
-      <link rel="stylesheet" type="text/css" href="webpageCSS.css">
+     
          <div id="section">  
             <h1 style = "color: blue; font-size:200%">Digital Tax Aid </h1>
             <h2> Buying Property</h2>
-           <h3 id="squid">Diagnosing The SDLT, ATED and CGT Implications</h3><br/><br/> <br/><br/>   
+           <h3 id="squid">Diagnosing the SDLT, ATED and CGT Implications</h3><br/><br/> <br/><br/>   
              
     
     
@@ -64,7 +45,7 @@
    
     if(isset($_POST['t'])) {
      
-        echo "Your response to whether the property has been bought by a non-natural person was that it was acquired by a "." ".$natperson."<br/><br/>";
+        echo $userid."<br/>"."Your response to whether the property has been bought by a non-natural person was that it was acquired by a "." ".$natperson."<br/><br/>";
             
             
         include_once 'taxdatabase.php';
@@ -141,7 +122,7 @@ or	die('Could not connect: ');
            
                  <div id="valtip"><li><b>Was the property value over £500,000? </b></li><br><br></div>
                    
-                <button type="button" id = "valuationtip">Hover here for explanation re value</button>
+                <p><a href="respropvaluemeaning.php"> click for meaning of valuation </a></p>
                    
                
                 Over £500k <input type = "radio" name = "fiveC" value = "Yes over"><br/><br/>
@@ -152,29 +133,10 @@ or	die('Could not connect: ');
                
                 </form>
             </div>
-    
-    <script type="text/javascript">
-   
-       $('#valuationtip').mouseover(function(){
-           
-            $('#valuationtip').html('The valuation threshold relates to the value of the property at 1 April 2017 or, if the property was bought later, at the time of acquisition. Property values are reassessed every five years, so there will be a general revaluation on 1 April 2022 (i.e. 5 years after 1 April 2017) and subsequent 5 yearly anniversaries.<br/><br/><br/>');
-           
-                                      });
-        
-        $('#valuationtip').mouseleave(function(){
-           
-            $('#valuationtip').fadeOut(5000).html("refresh page to see again the explanation re valuation");
-                                      });
-        
-        
-        
- 
-</script>
-    
-
+  
 
   <p><a href="respropQ2.php"> Back to previous page</a></p>
-<p><a href="respropsignup.php">click for log out page</a></p>
+ <p><a href="resproplogout.php">click for log out page</a></p>
 </html>
 
     

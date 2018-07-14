@@ -18,26 +18,30 @@ or	die('Could not connect: ');
 }
 ?>
 <html>
+    <link rel="stylesheet" type="text/css" href="webpageCSS.css">
+   
      <body>
+      
                 
-      <link rel="stylesheet" type="text/css" href="webpageCSS.css">
+      
          <div id="section">  
             <h1 style = "color: blue; font-size:200%">Digital Tax Aid </h1>
             <h2> Buying Property</h2>
-           <h3 id="squid">Diagnosing The SDLT, ATED and CGT Implications</h3><br/><br/> <br/><br/>   
+           <h3 id="squid">Diagnosing the SDLT, ATED and CGT Implications</h3><br/><br/> <br/><br/>   
              
     
     
              </div>
-
-            <h2>LogIn for Dignostic Check Questions</h2>
+         <div class="linktolog">
+             <p>You have signed up. Click below to login.</p><br/><br/>
+            <h3>Login for Dignostic Check Questions</h3>
             <form class="proceed" action ="resproplogin.php" method="post">
                 
                 
              
                 <button type="submit" name="submit">click to login</button>
             </form>
-                
+          </div>      
     </body>
     
 
