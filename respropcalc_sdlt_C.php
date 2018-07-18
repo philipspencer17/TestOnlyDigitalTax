@@ -1,4 +1,4 @@
-html>
+<html>
 <head>
     <title>Diagnose Your Tax Position on Property Purchases</title><br/><br/>
     <title>Registration and Login </title>
@@ -34,14 +34,9 @@ if (isset($_POST["submit"])) {
    
    $userid = $_POST ["userid"];
     $price = $_POST ["price"];
-  
    
-}
 
-
-
-
-    $db = mysqli_connect('localhost', 'root', 'root', 'Taxdata')
+   $db = mysqli_connect('localhost', 'root', 'root', 'Taxdata')
 
 or	die('Could not connect: ');      
 
@@ -57,7 +52,7 @@ if ($result = mysqli_query($db,$sql))
     
    $row = mysqli_fetch_array($result);
    
- if ($price <500001){
+ if ((($price) > -1) && (($price) <500001 )){
   $excess =  $price - $row[1];
     $marginaltax = ($excess*$row[3])/100;
     $sdlt  = $marginaltax + $row[4];
@@ -69,21 +64,28 @@ if ($result = mysqli_query($db,$sql))
     echo "  BUT NOTE! if this property is a second home (or has been bought as a buy to let), you will be liable to a 3% surchage, so your SDLT liability will rise to..."."£".$sdltsurcharge;
      echo "<br/><br/>";
     
- }  else
+ }  
+    
+    else
+        
+    {
+        
+        header ("Location:respropsdlt_C_calcproblem.php");   
+exit(); 
+    
+    }
+        
 
 
- {
-    echo "Error - price should not be over £500000<br/><br/>";
-    
-    
+}
+    echo "INVALID INPUT - YOU MAY HAVE PUT IN COMMAS OR £ SIGNS. TRY AGAIN WITHOUT THESE.<br/><br/><br/>";
+   
 }
     
-}
+
 
 
 mysqli_close($db);
-
-
 
 
 

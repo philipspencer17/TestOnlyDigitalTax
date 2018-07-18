@@ -1,3 +1,4 @@
+
 <html>
 <head>
     <title>Diagnose Your Tax Position on Property Purchases</title><br/><br/>
@@ -29,14 +30,16 @@
 </html> 
 
 <?php
+
  include_once 'taxdatabase.php';
 if (isset($_POST["submit"])) {
    
    $userid = $_POST ["userid"];
     $price = $_POST ["price"];
   
+  
    
-}
+
     $db = mysqli_connect('localhost', 'root', 'root', 'Taxdata')
 
 or	die('Could not connect: ');      
@@ -53,35 +56,38 @@ if ($result = mysqli_query($db,$sql))
     
    $row = mysqli_fetch_array($result);
     
-    
-    
+ if ( (($price) >-1) )
+        
+     {
     $excess =  $price - $row[1];
     $marginaltax = ($excess*$row[3])/100;
     $sdlt  = $marginaltax + $row[4];
-    
+     echo " The SDLT liability is..... "."£".$sdlt."<br/><br/>" ;
 }
+    
+
     else
         
     {
         
-        echo "problem";
+        header ("Location:respropsdlt_A_calcproblem.php");   
+        exit(); 
     
-    }
-  
-  
-   
- 
-    echo " The SDLT liability is..... "."£".$sdlt."<br/><br/>" ;
-   
+    
+    
+}
 
+}
+    else
+    {
     
-   
+    echo "INVALID INPUT - YOU MAY HAVE PUT IN COMMAS OR £ SIGNS. TRY AGAIN WITHOUT THESE<br/><br/><br/>";
+}
+}
 
 
 
 mysqli_close($db);
-
-
 
 
 

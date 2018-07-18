@@ -261,6 +261,14 @@ body{
             padding: 20px;
     
 }
+  #errorMessage1
+       {
+           color:red;
+           font-size:150% ; important;
+           
+           
+           
+       }
 header nav{
    
     width:100%;
@@ -403,6 +411,15 @@ header .nav-login a {
      
     
 }
+
+
+#signupbutton {
+ 
+                  
+  width: 60px;
+height: 50px; 
+                  
+              }
         .button{
             
     position: relative;
@@ -410,4 +427,10 @@ header .nav-login a {
             
             
         }
+ #wrappererrormessage
+       {
+           
+           width: 750px;
+           margin: 0 auto;
+       
         

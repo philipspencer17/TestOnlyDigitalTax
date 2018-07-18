@@ -52,7 +52,9 @@ if ($result = mysqli_query($db,$sql))
 {
     
    $row = mysqli_fetch_array($result);
-    
+  if ( (($price) >-1) )
+        
+     {   
    
   $excess =  $price - $row[1];
     $marginaltaxsurcharge = ($excess*$row[3])/100;
@@ -60,16 +62,40 @@ if ($result = mysqli_query($db,$sql))
      
     echo " The SDLT liability is..."."£".$sdlt ;
     echo "<br/><br/>";
-    echo "  This includes the 3% surcharge on amounts up to £500000 and a rate of 15% thereafter";
+    echo "  This includes the 3% surcharge on amounts up to £500,000 and a rate of 15% thereafter";
      echo "<br/><br/>";
-    
+      
+  }
+    else
+        
+    {
+        
+        header ("Location:respropsdlt_E_calcproblem.php");   
+        exit(); 
+     
 }
+
+}
+    else
+    {
+    
+    echo "INVALID INPUT - YOU MAY HAVE PUT IN COMMAS OR £ SIGNS. TRY AGAIN WITHOUT THESE<br/><br/><br/>";
+}
+
+
+ 
+    
+
 mysqli_close($db);
 
 
 
 ?>
 <html>
+    
+   
+    
+    
 <p><a href="respropsignup.php">click for log out page</a></p>
  <br/>
  <p><a href="respropcalcform_sdlt_E.php"> Back to previous page</a></p>

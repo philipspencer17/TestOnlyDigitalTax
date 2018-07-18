@@ -95,8 +95,7 @@
     
 </script>
     
-    <iframe width="360" height="115" src="https://www.youtube.com/embed/hb-RPGhpBSI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      
+    
         <p><a href="#top"> Back to top</a></p>
 
         </body>

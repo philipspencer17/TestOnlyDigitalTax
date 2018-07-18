@@ -1,4 +1,4 @@
-html>
+<html>
 <head>
     <title>Diagnose Your Tax Position on Property Purchases</title><br/><br/>
     <title>Registration and Login </title>
@@ -36,7 +36,7 @@ if (isset($_POST["submit"])) {
     $price = $_POST ["price"];
   
    
-}
+
     $db = mysqli_connect('localhost', 'root', 'root', 'Taxdata')
 
 or	die('Could not connect: ');      
@@ -53,44 +53,45 @@ if ($result = mysqli_query($db,$sql))
     
    $row = mysqli_fetch_array($result);
     
-    
+  if ( (($price) >-1) )
+        
+     {      
     
     $excess =  $price - $row[1];
     $marginaltax = ($excess*$row[3])/100;
     $sdlt  = $marginaltax + $row[4];
      $marginaltaxsurcharge = ($excess*$row[5])/100;
     $sdltsurcharge  = $marginaltaxsurcharge + $row[6];
-    
-}
-    else
-        
-    {
-        
-        echo "problem";
-    
-    }
-  
-  
-   
- 
     echo " Your tax liability is ".$sdltsurcharge ;
     echo "<br/><br/>";
     echo "NOTE! This  SDLT liability incudes a 3% surcharge as the owner is a non-natural person";
      echo "<br/><br/>";
     
+}
+     else
+        
+    {
+        
+        header ("Location:respropsdlt_D_calcproblem.php");   
+exit(); 
     
-   
+    }
+  
+  }
+else
+ {   
+    echo "INVALID INPUT - YOU MAY HAVE PUT IN COMMAS OR £ SIGNS. TRY AGAIN WITHOUT THESE.<br/><br/><br/>";
+}
+}
 
-
-
+ 
 mysqli_close($db);
 
-
-
-
-
 ?>
-<<html>
+<html>
+
+   
+
 <p><a href="respropsignup.php">click for log out page</a></p>
  <br/>
  <p><a href="respropcalcform_sdlt_D.php"> Back to previous page</a></p>

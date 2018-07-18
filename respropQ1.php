@@ -1,16 +1,18 @@
  <?php
-session_start();   
+session_start(); 
+// include_once 'taxdatabase.php';
    if (isset($_SESSION["userid"]) )
        {
                $userid = $_SESSION["userid"];
-              
-               
-       }
- else
- {
-     
-     echo "post failed";
- }
+              $password = $_SESSION ["password"];
+      
+ }   
+ 
+
+//} 
+//}
+       
+   
 
 ?>
 

@@ -7,19 +7,41 @@ if (isset($_POST["submit"])) {
      $lname =  $_POST ["lname"];
     $email = $_POST ["email"];
     $password = $_POST ["password"];
+    $passwordconfirm = $_POST["passwordconfirm"];
+}
+if($password !== $passwordconfirm)  {
+ 
+header ("Location:resproppasswordmismatch.php");
+exit();
+}
+    else
+        
+    if (strlen($password) !== 7 )
+    {
+header ("Location:resproppasswordwronglength.php");   
+exit();   
+    }
+  else      
+    {
+    // hashing password - new code 16 July
+    
+$hashedpassword = password_hash($password, PASSWORD_BCRYPT);
+    
+// end of hashing password code
 
     $db = mysqli_connect('localhost', 'root', 'root', 'Taxdata')
 
 or	die('Could not connect: ');      
 
-    $sql = "INSERT INTO users (userid,fname,lname, email, password) VALUES ('$userid','$fname', '$lname', '$email', '$password')";
+    $sql = "INSERT INTO users (userid,fname,lname, email, password) VALUES ('$userid','$fname', '$lname', '$email', '$hashedpassword')";
 
     $result =mysqli_query($conn,$sql);
 }
 ?>
 <html>
+    <head>
     <link rel="stylesheet" type="text/css" href="webpageCSS.css">
-   
+    </head>
      <body>
       
                 
@@ -36,9 +58,6 @@ or	die('Could not connect: ');
              <p>You have signed up. Click below to login.</p><br/><br/>
             <h3>Login for Dignostic Check Questions</h3>
             <form class="proceed" action ="resproplogin.php" method="post">
-                
-                
-             
                 <button type="submit" name="submit">click to login</button>
             </form>
           </div>      
