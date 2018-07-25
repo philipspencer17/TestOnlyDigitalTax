@@ -1,8 +1,9 @@
-
-
-
-
-<html>
+<?php
+    session_start();
+    $natperson = $_POST["t"];
+    $userid =$_SESSION["userid"] ;
+?>
+<<html>
 
     <head>
          
@@ -38,11 +39,8 @@
 
 </html>
 
-<?php
-    session_start();
-    $natperson = $_POST["t"];
-    $userid =$_SESSION['userid'] ;
-   
+
+ <?php  
     if(isset($_POST['t'])) {
      
         echo $userid."<br/>"."Your response to whether the property has been bought by a non-natural person was that it was acquired by a "." ".$natperson."<br/><br/>";

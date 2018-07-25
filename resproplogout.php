@@ -43,7 +43,7 @@ session_start();
         
         <div class = "main-wrapper">
             <ul>
-            <li><a href="respropregisterlogin.php" class="box">Login Home Page</a></li>
+            <li><a href="respropwebpage.php" class="box">Home Page</a></li>
             
             </ul>
         <div class="nav-login">
@@ -55,9 +55,11 @@ session_start();
               
           {
               
-          echo '<form action="resproplogout.php" method="POST">
-            <button type="submit" name="submit">logout </button>
-            </form>';
+//          echo '<form action="resproplogout.php" method="POST">
+//            <button type="submit" name="submit">logout </button>
+//            </form>';
+          session_unset();
+          
 }
 else
    { 

@@ -36,12 +36,13 @@
         $_SESSION = $userid;
         $Residential = $_POST['Residential'];
          
-        echo $userid."<br/>Your response to whether the property was residential was"." ".$Residential."<br/><br/>";
+        echo $userid."<br/><br/>Your response to whether the property was residential was"." ".$Residential."<br/><br/>";
  
             
     include_once 'taxdatabase.php';
     
-    $db = mysqli_connect('localhost', 'root', "root", 'Taxdata')
+ $db = mysqli_connect('localhost', 'root', "root", 'Taxdata')
+     //     $conn = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName)
 
 or	die('Could not connect: ');
     $sql = "INSERT INTO useranswers (userid,residential) VALUES ('$userid','$Residential')";
@@ -49,6 +50,7 @@ or	die('Could not connect: ');
     
     $result =mysqli_query($conn,$sql);
     mysqli_close($db);
+       //     mysqli_close($conn);
 //        $result =mysqli_query($conn,"SELECT count(*) FROM useranswers");
 
   //   echo "Well done. You are successfully registered".$fname." ".$lname;

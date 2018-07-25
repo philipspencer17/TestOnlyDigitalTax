@@ -27,9 +27,8 @@ exit();
     
 $hashedpassword = password_hash($password, PASSWORD_BCRYPT);
     
-// end of hashing password code
 
-    $db = mysqli_connect('localhost', 'root', 'root', 'Taxdata')
+    $conn = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName)
 
 or	die('Could not connect: ');      
 
@@ -57,7 +56,7 @@ or	die('Could not connect: ');
          <div class="linktolog">
              <p>You have signed up. Click below to login.</p><br/><br/>
             <h3>Login for Dignostic Check Questions</h3>
-            <form class="proceed" action ="resproplogin.php" method="post">
+            <form class="proceed" action ="respropheader.php" method="post">
                 <button type="submit" name="submit">click to login</button>
             </form>
           </div>      

@@ -1,7 +1,7 @@
 <?php
-session_start(); 
+//session_start(); 
 include_once 'taxdatabase.php';
-$userid = $_SESSION["userid"];
+//$userid = $_SESSION["userid"];
 
 
 ?>

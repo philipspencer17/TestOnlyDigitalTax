@@ -1,4 +1,13 @@
-  <html>
+<?php
+    
+     session_start();
+   
+       $userid = $_SESSION ["userid"];   
+ $QB = $_POST['QB'];
+   
+?>
+
+<html>
 
     <head>
          
@@ -22,16 +31,7 @@
   </body>
 
 </html>
-
 <?php
-    
-     session_start();
-   
-       $userid = $_SESSION ["userid"];   
- $QB = $_POST['QB'];
-   
- //      $userid = $_POST ["userid"];
-   
 
         if(isset($_POST['QB'])) {
 

@@ -1,4 +1,4 @@
-<<?php
+<?php
     include_once  'respropheader.php';
    
  ?>  
@@ -11,7 +11,7 @@
           if (isset($_SESSION["userid"])) {
                 echo "You are logged in";
                             
-               header("Location: http://localhost:8888///respropQ1.php
+               header("Location:respropQ1.php
                ");
           }
             
