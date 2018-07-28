@@ -84,5 +84,5 @@ iii) Capital Gains Tax (‘CGT’) will arise on any gain realised on the sale o
 
   
   <p><a href="respropQ4.php"> Back to previous page</a></p>
-      <p><a href="respropsummary.php"> Click to exit and logout</a></p><br/><br/>
+      <p><a href="resproplogout.php"> Click to exit and logout</a></p><br/><br/>
 </html>

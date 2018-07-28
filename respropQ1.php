@@ -2,11 +2,19 @@
 //session_start(); 
 // include_once 'taxdatabase.php';
  //  if (isset($_SESSION["userid"]) )
+
+
    //    {
             $_SESSION["userid"] = $_POST["userid"];;
                $userid = $_SESSION["userid"];
-          //    $password = $_SESSION ["password"];
+                $_SESSION["password"] = $_POST["password"];
+                $password = $_SESSION["password"];
       
+if (strlen($password) !== 7 )
+    {
+header ("Location:resproppasswordwronglength.php");   
+exit();   
+    }
 // }   
  
 

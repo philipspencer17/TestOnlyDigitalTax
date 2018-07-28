@@ -81,7 +81,7 @@ include_once 'taxdatabase.php';
 
 
   <p><a href="respropQ1.php"> Back to previous page</a></p>
-    <p><a href="respropsummary.php"> Click to exit and logout</a></p><br/><br/>
+    <p><a href="resproplogout.php"> Click to exit and logout</a></p><br/><br/>
  
     
    

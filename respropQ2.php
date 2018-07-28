@@ -36,21 +36,21 @@
         $_SESSION = $userid;
         $Residential = $_POST['Residential'];
          
-        echo $userid."<br/><br/>Your response to whether the property was residential was"." ".$Residential."<br/><br/>";
+        echo $userid."<br/><br/>"."Your response to whether the property was residential was"." ".$Residential."<br/><br/>";
  
             
     include_once 'taxdatabase.php';
     
- $db = mysqli_connect('localhost', 'root', "root", 'Taxdata')
-     //     $conn = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName)
+ //$db = mysqli_connect('localhost', 'root', "root", 'Taxdata')
+         $conn = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName)
 
 or	die('Could not connect: ');
     $sql = "INSERT INTO useranswers (userid,residential) VALUES ('$userid','$Residential')";
 
     
     $result =mysqli_query($conn,$sql);
-    mysqli_close($db);
-       //     mysqli_close($conn);
+ //   mysqli_close($db);
+           mysqli_close($conn);
 //        $result =mysqli_query($conn,"SELECT count(*) FROM useranswers");
 
   //   echo "Well done. You are successfully registered".$fname." ".$lname;
@@ -96,7 +96,8 @@ or	die('Could not connect: ');
              
     <div id = "alt">
                <form  action ="respropQ3.php" method ="POST" name = "submit"> 
-                   
+                
+         <input type = "text" class = "identry" name = "userid" required value = '<?php echo $userid ?>'><br><br>
                    <div id="nptip"><li><b>Was the property acquired by a Natural Person? </b></li><br><br></div>
                    
                <p><a href="respropnatpersmeaning.php"> click for meaning of Natural Person </a></p>

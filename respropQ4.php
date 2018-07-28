@@ -1,9 +1,10 @@
 
  <?php
-    session_start();
+ //   session_start();
+if(isset($_POST['userid'])) {
     $fiveC = $_POST['fiveC'];
-       $userid = $_SESSION ["userid"];   
-     
+       $userid = $_POST ["userid"];   
+}
 ?>
 
 
@@ -33,11 +34,11 @@
 
         
          
-        echo  $userid."<br/>"."Your response to whether or not the property value is greater than £500,000 is that it is "." "."$fiveC"."<br/><br/>";
+        echo  $userid."<br/><br/>"."Your response to whether or not the property value is greater than £500,000 is that it is "." "."$fiveC"."<br/><br/>";
        
                  include_once 'taxdatabase.php';
     
-    $db = mysqli_connect('localhost', 'root', "root", 'Taxdata')
+   $conn = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName)
 
 or	die('Could not connect: ');
             
@@ -46,7 +47,7 @@ or	die('Could not connect: ');
         WHERE userid = '$userid'
         GROUP BY userid";
 
-            $result=mysqli_query($db,$sql);
+            $result=mysqli_query($conn,$sql);
 
     if ($result){
 
@@ -57,7 +58,7 @@ or	die('Could not connect: ');
     }
     $result2 =mysqli_query($conn,$sql2);
             
-    mysqli_close($db);
+    mysqli_close($conn);
             
         }
         if ($fiveC == "Not over")
@@ -99,7 +100,7 @@ or	die('Could not connect: ');
     <div id = "alt">
                <form  action ="respropQ5.php" method ="POST" name = "submit">    
             
-                 
+                    <input type = "text" class = "identry" name = "userid" required value = '<?php echo $userid ?>'><br><br>     
           <div id="qbtip"><li><b>Was the property acquired for qualifying business use? </b></li><br><br></div>
                    
                <p><a href="respropqualbusinessmeaning.php"> click for meaning of qualifying business </a></p>

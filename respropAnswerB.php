@@ -91,7 +91,7 @@
     </body>   
   
   <p><a href="respropQ2.php"> Back to previous page</a></p>
-      <p><a href="respropsummary.php"> Click to exit and logout</a></p><br/><br/>
+      <p><a href="resproplogout.php"> Click to exit and logout</a></p><br/><br/>
 </html>
 
 

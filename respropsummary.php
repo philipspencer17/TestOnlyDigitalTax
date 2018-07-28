@@ -1,4 +1,13 @@
- <html>
+<?php
+//session_start();
+include_once 'taxdatabase.php';
+
+   
+$userid = $_SESSION ["userid"];  
+
+
+?>
+<html>
 
     <head>
          
@@ -26,13 +35,8 @@
 
 
 
+
 <?php
-session_start();
-include_once 'taxdatabase.php';
-
-   
-$userid = $_SESSION ["userid"];  
-
 $db = mysqli_connect('localhost', 'root', 'root', 'taxdata')
 
 or	die('Could not connect: ');

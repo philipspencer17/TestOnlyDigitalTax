@@ -37,7 +37,7 @@ if (isset($_POST["submit"])) {
   
    
 
-    $db = mysqli_connect('localhost', 'root', 'root', 'Taxdata')
+   $conn = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName)
 
 or	die('Could not connect: ');      
 
@@ -47,7 +47,7 @@ or	die('Could not connect: ');
     
 
 		
-if ($result = mysqli_query($db,$sql))
+if ($result = mysqli_query($conn,$sql))
     
 {
     
@@ -85,7 +85,7 @@ else
 }
 
  
-mysqli_close($db);
+mysqli_close($conn);
 
 ?>
 <html>

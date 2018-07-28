@@ -2,7 +2,7 @@
 
 <?php
 
-session_start();
+//session_start();
 
 ?>
 
@@ -43,7 +43,7 @@ session_start();
         
         <div class = "main-wrapper">
             <ul>
-            <li><a href="respropwebpage.php" class="box">Home Page</a></li>
+            <li><a href="respropwebpage.php" class="box">To Home Page</a></li>
             
             </ul>
         <div class="nav-login">
@@ -59,6 +59,8 @@ session_start();
 //            <button type="submit" name="submit">logout </button>
 //            </form>';
           session_unset();
+              echo "you are logged out";
+              
           
 }
 else

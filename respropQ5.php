@@ -1,10 +1,10 @@
 <?php
     
-     session_start();
-   
-       $userid = $_SESSION ["userid"];   
+ //    session_start();
+   if(isset($_POST['userid'])) {
+       $userid = $_POST ["userid"];   
  $QB = $_POST['QB'];
-   
+   }
 ?>
 
 <html>
@@ -37,12 +37,12 @@
 
         
          
-        echo $userid."<br/>"."Your response to whether or not the property is in a qualifying business us was "." ".$QB."<br/><br/>";
+        echo $userid."<br/><br/>"."Your response to whether or not the property is in a qualifying business us was "." ".$QB."<br/><br/>";
      
             
          include_once 'taxdatabase.php';
     
-    $db = mysqli_connect('localhost', 'root', "root", 'Taxdata')
+$conn = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName)
 
 or	die('Could not connect: ');
             
@@ -51,7 +51,7 @@ or	die('Could not connect: ');
         WHERE userid = '$userid'
         GROUP BY userid";
 
-            $result=mysqli_query($db,$sql);
+            $result=mysqli_query($conn,$sql);
 
     if ($result){
 
@@ -63,7 +63,7 @@ or	die('Could not connect: ');
     }
     $result2 =mysqli_query($conn,$sql2);
             
-    mysqli_close($db);
+    mysqli_close($conn);
             
         }
 
