@@ -52,7 +52,7 @@ if ($result = mysqli_query($conn,$sql))
     
    $row = mysqli_fetch_array($result);
     
-if ( (($price) >-1) )
+ if ( (($price) >-1) && ($price)<1000000001)
         
      {    
     
@@ -74,7 +74,7 @@ if ( (($price) >-1) )
         
     {
         
-        header ("Location:respropsdlt_B_calcproblem.php");   
+        header ("Location:respropsdlt_A_calcproblem.php");   
 exit(); 
     
     }

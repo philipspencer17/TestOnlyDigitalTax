@@ -6,8 +6,8 @@
     </head>
     <body>
      <div id = "wrappererrormessage">
-    <h3 id = errormessage1> Invalid entry. Check input is a positive number.</h3>
+    <h3 id = errormessage1> <br/><br/><br/><br/>INVALID ENTRY. YOU MAY HAVE ENTERED A PRICE WHICH IS TOO HIGH FOR THIS TOOL (I.E OVER £1 BILLION) OR A NEGATIVE NUMBER. <br/><br/><br/><br/> PLEASE PRESS THE BACK-BUTTON TO RETURN TO YOUR INPUT AND AMEND.</h3>
     </div>
     </body>
-    <p><a href="respropcalcform_sdlt_A.php">Back to SDLT input</a></p>
+  
 </html>    

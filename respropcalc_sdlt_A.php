@@ -57,7 +57,7 @@ if ($result = mysqli_query($conn,$sql))
     
    $row = mysqli_fetch_array($result);
     
- if ( (($price) >-1) )
+ if ( (($price) >-1) && ($price)<1000000001)
         
      {
     $excess =  $price - $row[1];
@@ -82,7 +82,7 @@ if ($result = mysqli_query($conn,$sql))
     else
     {
     
-    echo "INVALID INPUT - YOU MAY HAVE PUT IN COMMAS OR £ SIGNS. TRY AGAIN WITHOUT THESE<br/><br/><br/>";
+    echo "INVALID INPUT -  YOU MAY HAVE PUT IN COMMAS OR £ SIGNS. PLEASE RE-ENTER<br/><br/><br/>";
 }
 }
 
