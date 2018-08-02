@@ -1,18 +1,19 @@
  <?php
+ob_start();
 //session_start(); 
 // include_once 'taxdatabase.php';
  //  if (isset($_SESSION["userid"]) )
 
 
    //    {
-            $_SESSION["userid"] = $_POST["userid"];;
+            $_SESSION["userid"] = $_POST["userid"];
                $userid = $_SESSION["userid"];
                 $_SESSION["password"] = $_POST["password"];
                 $password = $_SESSION["password"];
       
 if (strlen($password) !== 7 )
     {
-header ("Location:resproppasswordwronglength.php");   
+header("Location:resproppasswordwronglength.php");   
 exit();   
     }
 // }   
@@ -30,7 +31,7 @@ exit();
     <head>
          
           <head>
-         
+           <meta name = "viewport" content = "width = device-width" content ="initial-scale=1"> 
         <form  action ="respropQ2.php" method ="POST"></form>
         <script type="text/javascript" src="jquery-3.3.1.min.js"></script> 
           <link rel="stylesheet" type="text/css" href="webpageCSS.css">
@@ -61,24 +62,26 @@ exit();
            <h3>Diagnosing the SDLT, ATED and CGT Implications</h3><br/><br/> <br/><br/>   
           
              </div>
-
+        
            <form   action ="respropQ2.php" method ="POST" name = "submit">
+               
+               <fieldset class="form-group">
           User ID: <input type = "text" class = "identry" name = "userid" required value = '<?php echo $userid ?>'><br><br>
                
-
+           
                <div><li><b>Is the property residential? </b></li><br><br></div>
               
             <p><a href="respropmeaning.php"> click for meaning of Residential </a></p>      
                  
- Residential?<input id ="Residential" type = "radio" name = "Residential"  value = "Yes"> 
+ Residential?<input id ="radio1" type = "radio" name = "Residential" required value = "Yes"><br/> 
 
 
-Non-Residential?<input id = "Residential" type = "radio" name = "Residential" required value = "No"> <br><br/>
+Non-Residential?<input id = "radio2" type = "radio" name = "Residential" required value = "No"> <br><br/>
  
-  
+            </fieldset>
                  
-            <input type="submit" id="submission" name="enter" value="Click here to Submit Your Response"><br><br/>
-           
+            <input type="submit" id="subbutton" name="enter" value="Click to Submit"><br><br/>
+            
           </form>
            
      

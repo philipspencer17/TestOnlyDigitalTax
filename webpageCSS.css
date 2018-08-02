@@ -1,5 +1,530 @@
 <html>
 <head>
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;rt
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+.main-wrapper{
+   
+    margin:0 auto;
+    width:1000px;
+    
+}
+.main-loginwrapper{
+   
+    margin:0 auto;
+    width:100%;
+    
+}
+
+.loginbox{
+    
+    width: 100%;
+    
+}
+
+
+/* my code */
+a {
+    text-decoration: none;
+}
+
+.box{
+   margin-left: 20px;
+   float:left; 
+   position: relative;    
+   
+}
+.firstbox{
+   margin-left: 20px;
+   float:left; 
+    position:relative;
+   
+   
+}
+
+.secondbox{
+   margin-left: 20px;
+   float:left; 
+    position:relative;
+   
+   
+}
+
+
+.thirdbox{
+   margin-left: 20px;
+   float:left; 
+    position:relative;
+   
+   
+}
+
+.fourthbox{
+   margin-left: 20px;
+   float:left; 
+    position:relative;
+   
+   
+}
+body{
+    
+    
+    background-color:lightcyan;
+            padding: 20px;
+    
+}
+
+header nav{
+   
+    width:100%;
+    height:60px;
+    background-color: white;
+}
+
+header nav ul{
+   
+    float: left;
+    
+}
+header nav ul li{
+   
+    float: left;
+    list-style: none;
+    
+}
+
+header nav ul li a{
+    font-family:arial;
+    font-size: 16px;
+    color: #111;
+    line-height: 63px;
+    
+}
+header .nav-login{
+    float:right;
+    
+}
+header .nav-login form{
+    float:left;
+    padding-top: 15px;
+    
+}
+header .nav-login form input{
+    float:left;
+    width: 140px;
+    height:30px;
+    padding:0px 10px;
+    margin-right: 10px;
+    border: none;
+    background-color: lightgray;
+     font-family:arial;
+    font-size: 14px;
+    color: #111;
+    line-height: 30px;
+    
+    
+}
+header .nav-login form button{
+    float:left;
+    width: 60px;
+    height:30px;
+    margin-right: 10px;
+    border: none;
+    background-color: lightgray;
+     font-family:arial;
+    font-size: 14px;
+    color: #111;
+   cursor: pointer;
+    
+    
+}
+header .nav-login form button:hover{
+   
+    background-color: lightgray;
+    
+}
+header .nav-login a {
+    display:block;
+    width:60px;
+    height: 60px;
+    border: none;
+    float:left;
+    background-color: white;
+    font-family:arial;
+    font-size: 16px;
+    color: #111;
+    line-height: 63px;
+    cursor: pointer;
+}
+.main-container{
+    padding-top: 40px;
+    
+}
+.main-container h2{
+    
+    font-family:arial;
+    font-size: 40px;
+    color: #111;
+    line-height: 50px;
+    text-align: center;
+}
+/* code for respropsignup.php file */
+.signupform {
+    width: 400px;
+    margin: o auto;
+    padding-top: 30px;
+    
+}
+.signupform input {
+    width: 90%;
+    height:40px;
+    padding:0px 5%;
+    margin-bottom: 4px;
+    border: none;
+    background-color: white;
+     font-family:arial;
+    font-size: 16px;
+    color: #111;
+    line-height: 40px;
+    
+}
+.signupform button {
+    display: block;
+    margin: 0 auto;
+    width:30%;
+    height:30px;
+    border: none;
+    background-color:darkgrey;
+     font-family:arial;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    
+}
+
+.signupform button:hover {
+    background-color:#111;
+     
+    
+}
+
+
+    a {
+    text-decoration: none;
+}
+.box{
+   margin-left: 30px;
+}
+body{
+    
+    
+    background-color:lightcyan;
+            padding: 20px;
+    
+}
+  #errorMessage1
+       {
+           color:red;
+           font-size:150% ; important;
+           
+           
+           
+       }
+header nav{
+   
+    width:100%;
+    height:60px;
+    background-color: white;
+}
+header nav ul{
+   
+    float: left;
+    
+}
+header nav ul li{
+   
+    float: left;
+    list-style: none;
+    
+}
+header nav ul li a{
+    font-family:arial;
+    font-size: 16px;
+    color: #111;
+    line-height: 63px;
+    
+}
+header .nav-login{
+    float:right;
+    
+}
+header .nav-login form{
+    float:left;
+    padding-top: 15px;
+    
+}
+header .nav-login form input{
+    float:left;
+    width: 140px;
+    height:30px;
+    padding:0px 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: lightgray;
+     font-family:arial;
+    font-size: 14px;
+    color: #111;
+    line-height: 30px;
+    
+    
+}
+header .nav-login form button{
+    float:left;
+    width: 60px;
+    height:30px;
+    margin-right: 10px;
+    border: none;
+    background-color: lightgray;
+     font-family:arial;
+    font-size: 14px;
+    color: #111;
+   cursor: pointer;
+    
+    
+}
+header .nav-login form button:hover{
+   
+    background-color: lightgray;
+    
+}
+header .nav-login a {
+    display:block;
+    width:60px;
+    height: 60px;
+    border: none;
+    float:left;
+    background-color: white;
+    font-family:arial;
+    font-size: 16px;
+    color: #111;
+    line-height: 63px;
+    cursor: pointer;
+}
+.main-container1{
+    padding-top: 40px;
+    
+}
+.main-container1 h2{
+    
+    font-family:arial;
+    font-size: 40px;
+    color: #111;
+    line-height: 50px;
+    text-align: center;
+    float: right;
+}
+
+
+.main-containersignup {
+    
+    font-family:arial;
+    font-size: 30px;
+    color: #111;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+}
+
+
+.signsize {
+    
+    font-family:arial;
+    font-size: 30px;
+    color: #111;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+}
+/* code for respropsignup.php file */
+.signup1form {
+    width: 300px;
+    margin: o auto;
+    padding-top: 30px;
+    
+}
+.signup1form input {
+    width: 90%;
+    height:40px;
+    padding:0px 5%;
+    margin-bottom: 4px;
+    border: none;
+    background-color: white;
+     font-family:arial;
+    font-size: 16px;
+    color: #111;
+    line-height: 40px;
+    position: relative;
+    float: left;
+    
+}
+
+.signup1form button {
+    display: block;
+    margin: 0 auto;
+    width:50%;
+    height:50px;
+    border: none;
+    background-color:darkgrey;
+     font-family:arial;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    
+}
+
+
+
+.signup1form button:hover {
+    background-color:green;
+     
+    
+}
+.main_wrapper1 {
+   float: left;
+     
+    
+}
+
+
+#signupbutton {
+ 
+                  
+  width: 60px;
+height: 50px; 
+                  
+              }
+        .button{
+            
+    position: relative;
+    
+            
+            
+        }
+ #wrappererrormessage
+       {
+           
+           width: 750px;
+           margin: 0 auto;
+}
+#wrappersignupmessage
+       {
+           
+           width: 100%;
+           margin: 0 auto;
+}
+
+
+
+
+# OLDWEBPAGECSSSTARTSHERE{}
+        
+        
+
+
+
+
 
 
 
@@ -27,14 +552,45 @@
 
 {
     
-width: 50%;    
+width: auto;    
 margin: 20px;    
+}
+
+
+.form-group{
+width: 50%;
+height:50%;
+    
+    
+}
+
+#radio1{
+width:20px;
+height: 20px;
+font-weight: 800;    
+    
+}
+#radio2{
+width:20px;
+height: 20px;
+font-weight: 800;    
+    
+}
+
+#subbutton{
+width:40%;
+    height:40px;
+    color:darkgreen;
+    font-weight: bold;
+    background-color: lightgray
+    
+           
 }
       
   .overlay {
-  margin-left: 20px;
-  height:70%;
-  width: 50%;
+  margin-left: 10px;
+  height:auto;
+  width: auto;
   background-color: #008CBA;
 }
 
@@ -42,8 +598,8 @@ margin: 20px;
   margin-left: 20px;
   color: white;
   font-size: 15px;
-  height: 100%;
-  width: 80%;
+  height: auto;
+  width: auto;
   
 }
 
@@ -61,13 +617,6 @@ height: 50px;
                   
               }
 
-#signupbutton {
- 
-                  
-  width: 60px;
-height: 50px; 
-                  
-              }
 
 #contain
             {
@@ -81,7 +630,7 @@ height: 50px;
                   
 padding:10px;
 margin-top: 20px;
-width:40%;
+width:auto;
 border-style: none;
 border-color: lightcyan;
                   
@@ -106,9 +655,11 @@ font-weight: bold;
      }
 #tip {
    
-        
+  margin-top: 5px;
+    padding-top: 7px;
   color: white;
-  font-size: 200%; 
+  font-size: 90%;
+font-weight: bold;
     
 }
  a{
@@ -130,6 +681,40 @@ font-weight: bold;
 .squareone {
     float: left
     color: white;
+}
+
+
+.main-loginwrapper{
+   
+    margin:0 auto;
+    width:100%;
+    
+}
+
+.loginbox{
+    
+    width: 100%;
+    
+}
+
+
+/* my code */
+a {
+    text-decoration: none;
+}
+
+.box{
+   margin-left: 20px;
+   float:left; 
+   position: relative;    
+   
+}
+.firstbox{
+   margin-left: 20px;
+   float:left; 
+    position:relative;
+   
+   
 }
             
             

@@ -1,5 +1,6 @@
 <html>
 <head>
+      <meta name = "viewport" content = "width = device-width" content ="initial-scale=1">
     <title>Diagnose Your Tax Position on Property Purchases</title><br/><br/>
     <title>Registration and Login </title>
     <link rel="stylesheet" type="text/css" href="respropregandlogin.css">
@@ -91,12 +92,11 @@ mysqli_close($conn);
 
 ?>
 <html>
-<p><a href="respropsignup.php">click for log out page</a></p>
+<p><a href="resproplogout.php">click for log out page</a></p>
  <br/>
- <p><a href="respropcalcform_sdlt_C.php"> Back to previous page</a></p>
+
 <br/>    
-    <p><a href="respropsummary.php"> Click to see summary of responses</a></p><br/><br/>
-   
+ 
    
 </html> 
 

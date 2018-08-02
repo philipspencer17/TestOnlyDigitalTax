@@ -8,7 +8,7 @@ include_once 'taxdatabase.php';
 <html>
     
      <head>
-         
+           <meta name = "viewport" content = "width = device-width" content ="initial-scale=1">
         <form  action ="respropQ3.php" method ="POST"></form>
         <script type="text/javascript" src="jquery-3.3.1.min.js"></script> 
           <link rel="stylesheet" type="text/css" href="webpageCSS.css">
@@ -80,7 +80,7 @@ include_once 'taxdatabase.php';
 
 
 
-  <p><a href="respropQ1.php"> Back to previous page</a></p>
+ 
     <p><a href="resproplogout.php"> Click to exit and logout</a></p><br/><br/>
  
     

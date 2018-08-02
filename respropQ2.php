@@ -3,7 +3,7 @@
 <html>
 
     <head>
-         
+              <meta name = "viewport" content = "width = device-width" content ="initial-scale=1">
         <form  action ="respropQ3.php" method ="POST"></form>
         <script type="text/javascript" src="jquery-3.3.1.min.js"></script> 
           <link rel="stylesheet" type="text/css" href="webpageCSS.css">
@@ -96,17 +96,18 @@ or	die('Could not connect: ');
              
     <div id = "alt">
                <form  action ="respropQ3.php" method ="POST" name = "submit"> 
-                
+           <fieldset class="form-group">     
          <input type = "text" class = "identry" name = "userid" required value = '<?php echo $userid ?>'><br><br>
                    <div id="nptip"><li><b>Was the property acquired by a Natural Person? </b></li><br><br></div>
                    
                <p><a href="respropnatpersmeaning.php"> click for meaning of Natural Person </a></p>
                  
-              Natural person: <input id="natpers" type = "radio" name = "t" required value = "natural person"> 
+              Natural person: <input id="radio1" type = "radio" name = "t" required value = "natural person"><br/> 
                 
               
-                  Non-Natural person <input id="natpers" type = "radio" name = "t" required value = "non-natural person"> 
-            <input type="submit" id="submission" name="enter" value="Click here to Submit Your Response"><br><br/>
+                  Non-Natural person <input id="radio2" type = "radio" name = "t" required value = "non-natural person"> 
+                   </fieldset>
+            <input type="submit" id="subbutton" name="enter" value="Click to Submit"><br><br/>
                 </form>
             </div>
     

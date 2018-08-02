@@ -9,7 +9,7 @@
 
      
     <head>
-        
+    <meta name = "viewport" content = "width = device-width" content ="initial-scale=1">  
     <title>Diagnose Your Tax Position on Property Purchases</title><br/><br/>
     <title>Registration and Login </title>
         <link rel="stylesheet" type="text/css" href="respropregandlogin.css"></link>
@@ -39,14 +39,14 @@
     
              </div>
 
-      <div id="wrappererrormessage">
+      <div id="wrappersignupmessage">
         <div id="errorMessage1"></div>
         
  
    
     
-    <section class="main-container1">
-         <h2>Sign Up</h2>
+    <section class="main-containersignup1">
+         <h3 class="signsize">Sign Up</h3>
         <div class="main-wrapper1">
            
             
@@ -60,7 +60,7 @@
                 <ul><input  type="password" name="passwordconfirm" required id = "passwordconfirm" placeholder="Confirm Password"></ul> 
                 
              
-                <button   type="submit" name="submit" id="signupbutton">Sign Up</button>
+                <button  type="submit" name="submit" id="signupbutton">Sign Up</button>
                     
             </form>
         

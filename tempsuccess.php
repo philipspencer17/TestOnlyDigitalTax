@@ -39,6 +39,7 @@ or	die('Could not connect: ');
 ?>
 <html>
     <head>
+     <meta name = "viewport" content = "width = device-width" content ="initial-scale=1"> 
     <link rel="stylesheet" type="text/css" href="webpageCSS.css">
     </head>
      <body>

@@ -4,7 +4,7 @@
    
      <script type="text/javascript" src="/Users/philipspencer/Desktop/Web Development/2-jquery/jquery-3.3.1.min.js"></script>     
  
-        <meta name="viewport" content="width=device-width, inionclickonclicktial-scale=1">
+        <meta name = "viewport" content = "width = device-width" content ="initial-scale=1"> 
            
         <script type="text/javascript" src="/Users/philipspencer/Desktop/Web Development/2-jquery/jquery-3.3.1.min.js"></script>  
         

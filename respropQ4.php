@@ -2,7 +2,7 @@
  <?php
  //   session_start();
 if(isset($_POST['userid'])) {
-    $fiveC = $_POST['fiveC'];
+    $fiveC = $_POST["fiveC"];
        $userid = $_POST ["userid"];   
 }
 ?>
@@ -11,7 +11,7 @@ if(isset($_POST['userid'])) {
 <html>
 
     <head>
-         
+              <meta name = "viewport" content = "width = device-width" content ="initial-scale=1">
         <form  action ="respropQ5.php" method ="POST"></form>
         <script type="text/javascript" src="jquery-3.3.1.min.js"></script> 
         <link rel="stylesheet" type="text/css" href="webpageCSS.css">
@@ -30,7 +30,7 @@ if(isset($_POST['userid'])) {
  
    
 <?php
-        if(isset($_POST['fiveC'])) {
+        if(isset($_POST["fiveC"])) {
 
         
          
@@ -99,23 +99,23 @@ or	die('Could not connect: ');
              
     <div id = "alt">
                <form  action ="respropQ5.php" method ="POST" name = "submit">    
-            
+             <fieldset class="form-group">
                     <input type = "text" class = "identry" name = "userid" required value = '<?php echo $userid ?>'><br><br>     
           <div id="qbtip"><li><b>Was the property acquired for qualifying business use? </b></li><br><br></div>
                    
                <p><a href="respropqualbusinessmeaning.php"> click for meaning of qualifying business </a></p>
                
                
-                Yes <input type = "radio" name = "QB" required value = "Yes"><br/><br/>
+                Yes <input id ="radio1" type = "radio" name = "QB" required value = "Yes"><br/><br/>
                
-                No <input type = "radio" name = "QB" required value = "No"> 
-                   
-            <input type="submit" id="submission" name="enter" value="Click here to Submit Your Response"><br><br/>
+                No <input id = "radio2" type = "radio" name = "QB" required value = "No"> 
+             </fieldset>      
+          <input type="submit" id="subbutton" name="enter" value="Click to Submit"><br><br/>  
                
                 </form>
             </div>
     
-  <p><a href="respropQ3.php"> Back to previous page</a></p>
+ 
     <p><a href="resproplogout.php">click for log out page</a></p>
 </html>
    

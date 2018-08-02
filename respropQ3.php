@@ -8,7 +8,7 @@
 <html>
 
     <head>
-         
+              <meta name = "viewport" content = "width = device-width" content ="initial-scale=1">
         <form  action ="respropQ4.php" method ="POST"></form>
         <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
          <link rel="stylesheet" type="text/css" href="webpageCSS.css"> 
@@ -116,7 +116,7 @@ or	die('Could not connect: ');
              
     <div id = "alt">
                <form  action ="respropQ4.php" method ="POST" name = "submit">  
-                   
+                  <fieldset class="form-group"> 
                  <input type = "text" class = "identry" name = "userid" required value = '<?php echo $userid ?>'><br><br>
                  
            
@@ -125,17 +125,17 @@ or	die('Could not connect: ');
                 <p><a href="respropvaluemeaning.php"> click for meaning of valuation </a></p>
                    
                
-                Over £500k <input type = "radio" name = "fiveC" value = "Yes over"><br/><br/>
+                Over £500k <input id = "radio1" type = "radio" name = "fiveC" value = "Yes over"><br/><br/>
                
-                Not over £500k <input type = "radio" name = "fiveC" value = "Not over"> 
-                   
-             <input type="submit" id="submission" name="enter" value="Click here to Submit Your Response"><br><br/>
+                Not over £500k <input ide = "radio2" type = "radio" name = "fiveC" required value = "Not over"> 
+               </fieldset>    
+             <input type="submit" id="subbutton" name="enter" value="Click to Submit"><br><br/>
                
                 </form>
             </div>
   
 
-  <p><a href="respropQ2.php"> Back to previous page</a></p>
+ 
  <p><a href="resproplogout.php">click for log out page</a></p>
 </html>
 

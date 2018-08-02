@@ -11,7 +11,7 @@
 
     <head>
          
-    
+             <meta name = "viewport" content = "width = device-width" content ="initial-scale=1">
         <script type="text/javascript" src="jquery-3.3.1.min.js"></script> 
         <link rel="stylesheet" type="text/css" href="webpageCSS.css">
         
@@ -92,7 +92,7 @@ or	die('Could not connect: ');
 ?>       
         
 <html>
-  <p><a href="respropQ4.php"> Back to previous page</a></p><br/><br/>;
+
     
     <p><a href="resproplogout.php">click for log out page</a></p>
  

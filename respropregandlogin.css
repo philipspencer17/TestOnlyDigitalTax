@@ -98,12 +98,62 @@ input, select {
     width:1000px;
     
 }
+.main-loginwrapper{
+   
+    margin:0 auto;
+    width:100%;
+    
+}
+
+.loginbox{
+    
+    width: 100%;
+    
+}
+
+
 /* my code */
 a {
     text-decoration: none;
 }
+
 .box{
-   margin-left: 30px;
+   margin-left: 20px;
+   float:left; 
+   position: relative;    
+   
+}
+.firstbox{
+  margin: auto;
+   float:left; 
+    position:relative;
+   
+   
+}
+
+.secondbox{
+   margin:auto;
+   float:left; 
+    position:relative;
+   
+   
+}
+
+
+.thirdbox{
+   margin: auto;
+   float:left; 
+    position:relative;
+   
+   
+}
+
+.fourthbox{
+   margin-left: 20px;
+   float:left; 
+    position:relative;
+   
+   
 }
 body{
     
@@ -264,7 +314,7 @@ body{
   #errorMessage1
        {
            color:red;
-           font-size:150% ; important;
+           font-size:auto ; important;
            
            
            
@@ -362,6 +412,28 @@ header .nav-login a {
     text-align: center;
     float: right;
 }
+
+
+.main-containersignup {
+    
+    font-family:arial;
+    font-size: 30px;
+    color: #111;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+}
+
+
+.signsize {
+    
+    font-family:arial;
+    font-size: 30px;
+    color: #111;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+}
 /* code for respropsignup.php file */
 .signup1form {
     width: 300px;
@@ -432,5 +504,12 @@ height: 50px;
            
            width: 750px;
            margin: 0 auto;
-       
+}
+#wrappersignupmessage
+       {
+           
+           width: 100%;
+           margin: 0 auto;
+}
+        
         

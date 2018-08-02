@@ -1,5 +1,6 @@
 <html>
 <head>
+      <meta name = "viewport" content = "width = device-width" content ="initial-scale=1">
     <title>Diagnose Your Tax Position on Property Purchases</title><br/><br/>
     <title>Registration and Login </title>
     <link rel="stylesheet" type="text/css" href="respropregandlogin.css">
@@ -62,7 +63,7 @@ if ($result = mysqli_query($conn,$sql))
     $sdlt  = $marginaltax + $row[4];
      $marginaltaxsurcharge = ($excess*$row[5])/100;
     $sdltsurcharge  = $marginaltaxsurcharge + $row[6];
-    echo " Your tax liability is ".$sdltsurcharge ;
+    echo " Your tax liability is "."£".$sdltsurcharge ;
     echo "<br/><br/>";
     echo "NOTE! This  SDLT liability incudes a 3% surcharge as the owner is a non-natural person";
      echo "<br/><br/>";
@@ -92,11 +93,9 @@ mysqli_close($conn);
 
    
 
-<p><a href="respropsignup.php">click for log out page</a></p>
+<p><a href="resproplogout.php">click for log out page</a></p>
  <br/>
- <p><a href="respropcalcform_sdlt_D.php"> Back to previous page</a></p>
-<br/>    
-    <p><a href="respropsummary.php"> Click to see summary of responses</a></p><br/><br/>
+
    
 </html> 
 

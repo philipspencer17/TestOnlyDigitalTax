@@ -1,5 +1,5 @@
 <?php
-//session_start();
+session_start();
 include_once 'taxdatabase.php';
 
    
@@ -11,7 +11,7 @@ $userid = $_SESSION ["userid"];
 
     <head>
          
-    
+      <meta name = "viewport" content = "width = device-width" content ="initial-scale=1">
         <script type="text/javascript" src="jquery-3.3.1.min.js"></script> 
         <link rel="stylesheet" type="text/css" href="webpageCSS.css">
         

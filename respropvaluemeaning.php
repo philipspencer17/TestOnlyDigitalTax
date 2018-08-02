@@ -1,10 +1,10 @@
 
 <html>
 <head>   
-   
+     <meta name = "viewport" content = "width = device-width" content ="initial-scale=1">
      <script type="text/javascript" src="/Users/philipspencer/Desktop/Web Development/2-jquery/jquery-3.3.1.min.js"></script>     
  
-        <meta name="viewport" content="width=device-width, inionclickonclicktial-scale=1">
+          <meta name = "viewport" content = "width = device-width" content ="initial-scale=1"> 
            
         <script type="text/javascript" src="/Users/philipspencer/Desktop/Web Development/2-jquery/jquery-3.3.1.min.js"></script>  
         
@@ -18,7 +18,7 @@
 <div class = "overlay">
     
     
-    <div class = "helptip"><h2 id ="tip">The valuation threshold .....</h2><br/><br/> 
+    <div class = "helptip"><h2 id ="tip">The valuation threshold..</h2><br/><br/> 
     
         <p>a)  relates to the value of the property at 1 April 2017 or,</p><br/>
         <p>b)  if the property was bought later, at the time of acquisition</p><br/><br/>

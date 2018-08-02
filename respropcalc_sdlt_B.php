@@ -9,7 +9,7 @@
     </head>
     
     <body>
-                
+         <meta name = "viewport" content = "width = device-width" content ="initial-scale=1">         
       <link rel="stylesheet" type="text/css" href="webpageCSS.css">
          <div id="section">  
             <h1 style = "color: blue; font-size:200%">Digital Tax Aid </h1><br/><br/>
@@ -93,11 +93,11 @@ mysqli_close($conn);
 
 ?>
 <html>
-<p><a href="respropsignup.php">click for log out page</a></p>
+<p><a href="resproplogout.php">click for log out page</a></p>
  <br/>
- <p><a href="respropcalcform_sdlt_B.php"> Back to previous page</a></p>
+
 <br/>    
-    <p><a href="respropsummary.php"> Click to see summary of responses</a></p><br/><br/>;
+
    
 </html> 
 
