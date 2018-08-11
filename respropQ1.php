@@ -1,29 +1,43 @@
  <?php
 ob_start();
-//session_start(); 
-// include_once 'taxdatabase.php';
- //  if (isset($_SESSION["userid"]) )
-
-
-   //    {
+  include_once 'taxdatabase.php';
             $_SESSION["userid"] = $_POST["userid"];
-               $userid = $_SESSION["userid"];
-                $_SESSION["password"] = $_POST["password"];
-                $password = $_SESSION["password"];
+            $userid = $_SESSION["userid"];
+            $_SESSION["password"] = $_POST["password"];
+            $password = $_SESSION["password"];
       
 if (strlen($password) !== 7 )
     {
 header("Location:resproppasswordwronglength.php");   
 exit();   
     }
-// }   
- 
 
- 
+// new code 8 AUg
 
+$conn = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName)
+
+or	die('Could not connect: ');      
+
+    $sql = "SELECT password
+		    FROM users
+		    WHERE  userid = '$userid' ";
+ if ($result = mysqli_query($conn,$sql))
+ {
+     
+
+if ($row = mysqli_fetch_assoc($result)) {
        
-   
-
+        //check dehashed password
+        $hashedpasswordcheck = password_verify($password, $row['password']);
+        if($hashedpasswordcheck == false)
+        {
+             header("Location: ../resproppasswordincorrect.php");
+             exit();
+        }
+ 
+}
+ }
+// end of new code 8 aug
 ?>
 
 <html>
@@ -67,6 +81,8 @@ exit();
                
                <fieldset class="form-group">
           User ID: <input type = "text" class = "identry" name = "userid" required value = '<?php echo $userid ?>'><br><br>
+        
+        
                
            
                <div><li><b>Is the property residential? </b></li><br><br></div>

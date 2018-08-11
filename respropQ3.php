@@ -125,9 +125,9 @@ or	die('Could not connect: ');
                 <p><a href="respropvaluemeaning.php"> click for meaning of valuation </a></p>
                    
                
-                Over £500k <input id = "radio1" type = "radio" name = "fiveC" value = "Yes over"><br/><br/>
+                Over £500k <input id = "radio1" type = "radio" name = "fiveC" required value = "Yes over"><br/><br/>
                
-                Not over £500k <input ide = "radio2" type = "radio" name = "fiveC" required value = "Not over"> 
+                Not over £500k <input id = "radio2" type = "radio" name = "fiveC" required value = "Not over"> 
                </fieldset>    
              <input type="submit" id="subbutton" name="enter" value="Click to Submit"><br><br/>
                

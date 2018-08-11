@@ -55,8 +55,9 @@ or	die('Could not connect: ');
             
     $sql2 = "UPDATE useranswers SET  valueover£500k = '$fiveC'  WHERE Diagnosticref = $row[0] ";
 
+       $result2 =mysqli_query($conn,$sql2);   
     }
-    $result2 =mysqli_query($conn,$sql2);
+  
             
     mysqli_close($conn);
             

@@ -30,9 +30,9 @@ include_once 'taxdatabase.php';
 <thead>  
 <tr>
     <th>£</th>
-    <td><td> <td><td><td><td> <td><td>
+    <td><td> <td><td><td><td> <td><td><td><td>
     <th>£</th>
-     <td><td> <td><td><td><td> <td><td>
+     <td><td> <td><td><td><td> <td><td><td><td><td><td><td><td><td><td><td><td><td><td>
     </td>
     <th>%</th>
     <th></th>
@@ -42,21 +42,21 @@ include_once 'taxdatabase.php';
     
      <tr>
     <td>0
-     <td><td> <td><td><td><td> <td><td>
+   <td><td> <td><td><td><td> <td><td><td><td>
     <td>150,000
-     <td><td> <td><td><td><td> <td><td>
+   <td><td> <td><td><td><td> <td><td><td><td><td><td><td><td><td><td><td><td><td><td>
     <td>0</td>
 </tr>      
       <tr>
     <td>150,001
-     <td><td> <td><td><td><td> <td><td>
+     <td><td> <td><td><td><td> <td><td><td><td>
     <td>250,000
-      <td><td> <td><td><td><td> <td><td>
+    <td><td> <td><td><td><td> <td><td><td><td><td><td><td><td><td><td><td><td><td><td>
     <td>2</td>
 </tr> 
         <tr>
     <td>over 250,000
-     <td><td> <td><td><td><td> <td><td> <td><td> <td><td><td><td> <td><td><td></td>
+     <td><td> <td><td><td><td> <td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td>
     <td>5</td>
 </tr>   
     </table>   
