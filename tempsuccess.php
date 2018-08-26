@@ -26,7 +26,38 @@ exit();
     // hashing password - new code 16 July
     
 $hashedpassword = password_hash($password, PASSWORD_BCRYPT);
+   
+      // new code 14 Aug
+      
+$conn = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName)
+
+or	die('Could not connect: ');      
+
+    $sql = "SELECT userid
+		    FROM users
+		    WHERE  userid = '$userid' ";
+ if ($result = mysqli_query($conn,$sql))
+ {
+     
+
+$row = mysqli_fetch_assoc($result);
+       
+     
+        
+        if($row > 0)
+        {
+             header("Location: ../respropuserexists.php");
+             exit();
+        }
+ 
+}
+   
     
+      
+      // new code 14 Aug
+      
+      
+      
 
     $conn = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName)
 
