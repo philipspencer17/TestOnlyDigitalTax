@@ -137,6 +137,7 @@ or	die('Could not connect: ');
 
  
  <p><a href="resproplogout.php">click for log out page</a></p>
+ <p> Use back button above to return to previous page</p>
 </html>
 
     

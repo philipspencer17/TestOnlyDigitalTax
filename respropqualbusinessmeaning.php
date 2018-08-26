@@ -30,7 +30,7 @@
     </div></div>
     
     
-    <p><a href="respropQ4.php"> Back to the qualifying business question</a></p>
+    <p>Use back button above to return to valuation question</p>
     </body>    
     
     

@@ -27,7 +27,7 @@
     </div></div>
     
     
-    <p><a href="respropQ2.php"> Back to natural person question</a></p>
+    <p>Use back button above to return to natural person question</p>
     </body>    
     
     

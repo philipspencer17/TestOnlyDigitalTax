@@ -27,24 +27,22 @@ exit();
     
 $hashedpassword = password_hash($password, PASSWORD_BCRYPT);
    
-      // new code 14 Aug
       
 $conn = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName)
 
 or	die('Could not connect: ');      
-
-    $sql = "SELECT userid
+      
+// code incl sql injection attack prevention       
+    
+      $sql = "SELECT userid
 		    FROM users
-		    WHERE  userid = '$userid' ";
- if ($result = mysqli_query($conn,$sql))
- {
-     
+		    WHERE  userid = ? ";
+      $stmt = $conn -> prepare ($sql);
+      $stmt -> bind_param("s", $userid); 
+       $stmt ->execute();
+      $stmt -> store_result();
 
-$row = mysqli_fetch_assoc($result);
-       
-     
-        
-        if($row > 0)
+     if($stmt ->num_rows>0)
         {
              header("Location: ../respropuserexists.php");
              exit();
@@ -66,7 +64,7 @@ or	die('Could not connect: ');
     $sql = "INSERT INTO users (userid,fname,lname, email, password) VALUES ('$userid','$fname', '$lname', '$email', '$hashedpassword')";
 
     $result =mysqli_query($conn,$sql);
-}
+
 ?>
 <html>
     <head>

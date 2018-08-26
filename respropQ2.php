@@ -41,7 +41,7 @@
             
     include_once 'taxdatabase.php';
     
- //$db = mysqli_connect('localhost', 'root', "root", 'Taxdata')
+
          $conn = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName)
 
 or	die('Could not connect: ');
@@ -49,13 +49,9 @@ or	die('Could not connect: ');
 
     
     $result =mysqli_query($conn,$sql);
- //   mysqli_close($db);
+ 
            mysqli_close($conn);
-//        $result =mysqli_query($conn,"SELECT count(*) FROM useranswers");
 
-  //   echo "Well done. You are successfully registered".$fname." ".$lname;
-//     header("Location: ../respropsignup.php?signup=success");
- //   exit(); 
 }
             
         
@@ -112,7 +108,7 @@ or	die('Could not connect: ');
             </div>
     
 <html>
-  <p><a href="respropQ1.php"> Back to previous page</a></p>
+  <p> Use back button above to return to previous page</a></p>
   <p><a href="resproplogout.php">click for log out page</a></p>
 </html>  
     

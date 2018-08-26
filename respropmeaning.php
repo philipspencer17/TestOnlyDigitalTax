@@ -26,11 +26,11 @@
     
    <p> Note that there are variations in the definition of residential property for each of the SDLT, ATED and new CGT rules.</p> 
     
-    <p>Further advice should be taken in any area of doubt in relation to specific properties and in certain uses such as student accommodation and care homes. There is also an extended meaning of residential property for recent CGT rules for non-residents to include land that has at any time in the relevant period consisted of or included a dwelling.</p>
+    <p>Further advice should be taken in any area of doubt in relation to specific properties and in certain uses such as student accommodation and care homes.<br/><br/> There is also an extended meaning of residential property for recent CGT rules for non-residents to include land that has at any time in the relevant period consisted of or included a dwelling.</p>
     </div></div>
     
     
-    <p><a href="respropQ1.php"> Back to residential property question</a></p>
+  <p>Use back button above to return to residence question</p>
     </body>    
     
     

@@ -29,7 +29,7 @@
     </div></div>
     
     
-    <p><a href="respropQ3.php"> Back to valuation question</a></p>
+    <p>Use back button above to return to valuation question</p>
     </body>    
     
     

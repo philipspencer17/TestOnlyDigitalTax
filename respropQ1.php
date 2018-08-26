@@ -17,27 +17,29 @@ exit();
 $conn = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName)
 
 or	die('Could not connect: ');      
-
-    $sql = "SELECT password
+//
+// code incl sql injection attack prevention       
+    
+      $sql = "SELECT password
 		    FROM users
-		    WHERE  userid = '$userid' ";
- if ($result = mysqli_query($conn,$sql))
- {
-     
+		    WHERE  userid = ? ";
+      $stmt = $conn -> prepare ($sql);
+      $stmt -> bind_param("s", $userid); 
+       $stmt ->execute();
+      $result = $stmt -> get_result();
 
-if ($row = mysqli_fetch_assoc($result)) {
-       
-        //check dehashed password
+if ($row = $result -> fetch_assoc()) {
+              //check dehashed password
         $hashedpasswordcheck = password_verify($password, $row['password']);
-        if($hashedpasswordcheck == false)
-        {
-             header("Location: ../resproppasswordincorrect.php");
-             exit();
-        }
+       if($hashedpasswordcheck == false)
+       {
+        header("Location: ../resproppasswordincorrect.php");
+           exit();
+      }
  
 }
- }
-// end of new code 8 aug
+ 
+
 ?>
 
 <html>
